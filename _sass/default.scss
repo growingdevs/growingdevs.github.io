@@ -1,8 +1,11 @@
 @import "compass/reset";
 @import "compass/css3";
 @import "config";
+@import "fonts";
 @import "mixins";
 
-// Font Stack
+body {
+  font-family: $palatino;
+}
 
 @import "highlighting";
