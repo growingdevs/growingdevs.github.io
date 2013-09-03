@@ -1,9 +1,9 @@
 # Growing Devs #
 
-A shared space for a group of developers who wish to write about their work
-without the isolation that comes with a solo blog, or the constraints of
-writing only for the company you work for, about the company's technology
-and techniques
+Growing Devs is a shared space for a group of developers who wish to write
+about their work without the isolation that comes with a solo blog, or the
+constraints of writing only for the company you work for. Here you'll find
+content about the technology, techniques, and process the authors are using.
 
 ## Getting Started ##
 

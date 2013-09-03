@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-created_at:   2013-08-06 16:58:11 -04:00
+title: "Welcome to Jekyll!"
+created_at: 2013-08-06 16:58:11 -04:00
+summary: "Short post welcoming you to Jekyll. And here's a second sentence since we like it to be a bit longer."
 tags: jekyll update
 ---
 
@@ -10,13 +11,13 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 Jekyll also offers powerful support for code snippets:
 
-{% highlight ruby %}
+<pre><code class="language-ruby">
 def print_hi(name)
   puts "Hi, #{name}"
 end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+</code></pre>
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
 

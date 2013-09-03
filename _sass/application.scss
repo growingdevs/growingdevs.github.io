@@ -1,0 +1,110 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "config";
+@import "fonts";
+@import "mixins";
+
+* {
+  @include box-sizing(border-box);
+}
+
+body {
+  color: #444;
+  font: 300 16px/26px $helvetica;
+}
+
+h1,h2,h3 {
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 100%;
+  padding: 0 1em;
+  margin: 0 auto;
+
+  @include respond-to($large) {
+    padding: 0;
+    width: 768px;
+  }
+}
+
+// HEADER
+
+header {
+  margin-top: 1em;
+
+  h1 {
+    font-weight: 400;
+    font-size: 1.5em;
+    text-align: center;
+    // font-weight: lighter;
+    // text-transform: uppercase;
+
+    @include respond-to($small) {
+      text-align: left;
+    }
+  }
+}
+
+// INDEX
+p.intro {
+  margin: 1em 0;
+  line-height: 1.2em;
+}
+
+// ARTICLE
+article {
+  margin: 1em 0;
+  // border-top: 1px dotted #EEE;
+
+  h1 {
+    font-size: 1.2em;
+    font-weight: normal;
+    margin: .25em 0;
+
+    @include respond-to($small) {
+      margin: 1em 0 .5em 0;
+    }
+  }
+
+  span.created-at {
+    display: block;
+    text-align: center;
+
+    @include respond-to($small) {
+      float: right;
+    }
+  }
+
+  p.summary {
+    line-height: 1.2em;
+  }
+
+  ul.tags {
+    // float: right;
+    margin-top: .5em;
+
+    &:before {
+      content: 'tags: ';
+    }
+
+    li {
+      display: inline;
+      // font-weight: 400;
+      color: $tag-color;
+    }
+
+    // @include respond-to($small) {
+    //   margin-top: .5em;
+    // }
+  }
+}
+
+// FOOTER
+
+@import "highlighting";

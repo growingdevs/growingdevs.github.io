@@ -10,11 +10,19 @@
     <!-- <link rel="stylesheet" href="/stylesheets/syntax.css"> -->
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/stylesheets/default.css">
+    <link rel="stylesheet" href="/stylesheets/application.css">
 
   </head>
   <body>
-    {{ site.name }}
-    {{ content }}
+    <div class="container">
+      <header>
+        <h1>{{ site.name }}</h1>
+      </header>
+
+      {{ content }}
+
+      <footer>
+      </footer>
+    </div>
   </body>
 </html>
