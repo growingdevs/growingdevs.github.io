@@ -11,15 +11,15 @@ code[class*="language-"],
 pre[class*="language-"] {
   color: black;
   text-shadow: 0 1px white;
-  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  font: 300 16px/1.4em $monospace;
   direction: ltr;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
 
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
 
   -webkit-hyphens: none;
   -moz-hyphens: none;
@@ -53,7 +53,8 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: #f5f2f0;
+  // background: #f9f9f9;
+  border: 1px solid #EEEEEE; // #f5f2f0
 }
 
 /* Inline code */

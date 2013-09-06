@@ -73,94 +73,103 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 11, ../_sass/application.scss */
 body {
   color: #444;
-  font: 300 16px/26px Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 300 16px/1.4em Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* line 19, ../_sass/application.scss */
 a {
   color: #6669f2;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
-/* line 25, ../_sass/application.scss */
+/* line 24, ../_sass/application.scss */
 .container {
   width: 100%;
   padding: 0 1em;
   margin: 0 auto;
 }
 @media only screen and (min-width: 769px) {
-  /* line 25, ../_sass/application.scss */
+  /* line 24, ../_sass/application.scss */
   .container {
     padding: 0;
     width: 768px;
   }
 }
 
-/* line 38, ../_sass/application.scss */
+/* line 37, ../_sass/application.scss */
 header {
   margin-top: 1em;
 }
-/* line 41, ../_sass/application.scss */
+/* line 40, ../_sass/application.scss */
 header h1 {
   font-weight: 400;
   font-size: 1.5em;
   text-align: center;
 }
 @media only screen and (min-width: 481px) {
-  /* line 41, ../_sass/application.scss */
+  /* line 40, ../_sass/application.scss */
   header h1 {
     text-align: left;
   }
 }
 
-/* line 55, ../_sass/application.scss */
+/* line 54, ../_sass/application.scss */
 p.intro {
-  margin: 1em 0;
+  margin: 1em 0 2em 0;
   line-height: 1.2em;
 }
 
-/* line 61, ../_sass/application.scss */
+/* line 60, ../_sass/application.scss */
 article {
   margin: 1em 0;
 }
-/* line 65, ../_sass/application.scss */
+/* line 64, ../_sass/application.scss */
 article h1 {
   font-size: 1.2em;
   font-weight: normal;
   margin: .25em 0;
 }
+/* line 69, ../_sass/application.scss */
+article h1 a {
+  text-transform: uppercase;
+}
 @media only screen and (min-width: 481px) {
-  /* line 65, ../_sass/application.scss */
+  /* line 64, ../_sass/application.scss */
   article h1 {
     margin: 1em 0 .5em 0;
   }
 }
-/* line 75, ../_sass/application.scss */
+/* line 78, ../_sass/application.scss */
 article span.created-at {
   display: block;
   text-align: center;
 }
 @media only screen and (min-width: 481px) {
-  /* line 75, ../_sass/application.scss */
+  /* line 78, ../_sass/application.scss */
   article span.created-at {
     float: right;
   }
 }
-/* line 84, ../_sass/application.scss */
+/* line 87, ../_sass/application.scss */
+article p {
+  margin-bottom: 1em;
+}
+/* line 91, ../_sass/application.scss */
 article p.summary {
-  line-height: 1.2em;
+  margin-bottom: 0.25em;
 }
-/* line 88, ../_sass/application.scss */
-article ul.tags {
-  margin-top: .5em;
+/* line 95, ../_sass/application.scss */
+article pre {
+  margin-bottom: 1em;
 }
-/* line 92, ../_sass/application.scss */
+/* line 103, ../_sass/application.scss */
 article ul.tags:before {
+  font-size: 80%;
   content: 'tags: ';
 }
-/* line 96, ../_sass/application.scss */
+/* line 108, ../_sass/application.scss */
 article ul.tags li {
+  font-size: 80%;
   display: inline;
   color: #aaaaaa;
 }
@@ -177,14 +186,14 @@ code[class*="language-"],
 pre[class*="language-"] {
   color: black;
   text-shadow: 0 1px white;
-  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  font: 300 16px/1.4em "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
   direction: ltr;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
@@ -221,17 +230,17 @@ pre[class*="language-"] {
 /* line 55, ../_sass/_highlighting.scss */
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: #f5f2f0;
+  border: 1px solid #EEEEEE;
 }
 
 /* Inline code */
-/* line 60, ../_sass/_highlighting.scss */
+/* line 61, ../_sass/_highlighting.scss */
 :not(pre) > code[class*="language-"] {
   padding: .1em;
   border-radius: .3em;
 }
 
-/* line 68, ../_sass/_highlighting.scss */
+/* line 69, ../_sass/_highlighting.scss */
 .token.comment,
 .token.prolog,
 .token.doctype,
@@ -239,17 +248,17 @@ pre[class*="language-"] {
   color: slategray;
 }
 
-/* line 72, ../_sass/_highlighting.scss */
+/* line 73, ../_sass/_highlighting.scss */
 .token.punctuation {
   color: #999;
 }
 
-/* line 76, ../_sass/_highlighting.scss */
+/* line 77, ../_sass/_highlighting.scss */
 .namespace {
   opacity: .7;
 }
 
-/* line 83, ../_sass/_highlighting.scss */
+/* line 84, ../_sass/_highlighting.scss */
 .token.property,
 .token.tag,
 .token.boolean,
@@ -257,14 +266,14 @@ pre[class*="language-"] {
   color: #905;
 }
 
-/* line 89, ../_sass/_highlighting.scss */
+/* line 90, ../_sass/_highlighting.scss */
 .token.selector,
 .token.attr-name,
 .token.string {
   color: #690;
 }
 
-/* line 97, ../_sass/_highlighting.scss */
+/* line 98, ../_sass/_highlighting.scss */
 .token.operator,
 .token.entity,
 .token.url,
@@ -274,25 +283,25 @@ pre[class*="language-"] {
   background: rgba(255, 255, 255, 0.5);
 }
 
-/* line 104, ../_sass/_highlighting.scss */
+/* line 105, ../_sass/_highlighting.scss */
 .token.atrule,
 .token.attr-value,
 .token.keyword {
   color: #07a;
 }
 
-/* line 110, ../_sass/_highlighting.scss */
+/* line 111, ../_sass/_highlighting.scss */
 .token.regex,
 .token.important {
   color: #e90;
 }
 
-/* line 114, ../_sass/_highlighting.scss */
+/* line 115, ../_sass/_highlighting.scss */
 .token.important {
   font-weight: bold;
 }
 
-/* line 118, ../_sass/_highlighting.scss */
+/* line 119, ../_sass/_highlighting.scss */
 .token.entity {
   cursor: help;
 }

@@ -10,7 +10,7 @@
 
 body {
   color: #444;
-  font: 300 16px/26px $helvetica;
+  font: 300 16px/1.4em $helvetica;
 }
 
 h1,h2,h3 {
@@ -19,7 +19,6 @@ h1,h2,h3 {
 a {
   color: $link-color;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .container {
@@ -53,7 +52,7 @@ header {
 
 // INDEX
 p.intro {
-  margin: 1em 0;
+  margin: 1em 0 2em 0;
   line-height: 1.2em;
 }
 
@@ -66,6 +65,10 @@ article {
     font-size: 1.2em;
     font-weight: normal;
     margin: .25em 0;
+
+    a {
+      text-transform: uppercase;
+    }
 
     @include respond-to($small) {
       margin: 1em 0 .5em 0;
@@ -81,19 +84,29 @@ article {
     }
   }
 
+  p {
+    margin-bottom: 1em;
+  }
+
   p.summary {
-    line-height: 1.2em;
+    margin-bottom: 0.25em;
+  }
+
+  pre {
+    margin-bottom: 1em;
   }
 
   ul.tags {
     // float: right;
-    margin-top: .5em;
+    // margin-top: .5em;
 
     &:before {
+      font-size: 80%;
       content: 'tags: ';
     }
 
     li {
+      font-size: 80%;
       display: inline;
       // font-weight: 400;
       color: $tag-color;

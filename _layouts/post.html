@@ -1,9 +1,10 @@
 ---
 layout: application
+trigger: post
 ---
 
 <article>
-  <span class="created-at">{{ post.created_at | date:'%Y-%m-%d' }}</span>
+  <span class="created-at">{{ page.created_at | date:'%Y-%m-%d' }}</span>
   <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
 
   {{content}}

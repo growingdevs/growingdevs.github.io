@@ -5,6 +5,14 @@ about their work without the isolation that comes with a solo blog, or the
 constraints of writing only for the company you work for. Here you'll find
 content about the technology, techniques, and process the authors are using.
 
+### Benefits ###
+
+* Our topics can be polyglot, without language restriction
+* The format helps motivate the people involved to write
+* Becomes a resource in its own right
+* Shared readership
+* Combined pagerank
+
 ## Getting Started ##
 
 1. Clone the repo

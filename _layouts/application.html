@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/stylesheets/application.css">
 
   </head>
-  <body>
+  <body data-trigger="{{page.trigger}}">
     <div class="container">
       <header>
         <h1>{{ site.name }}</h1>
@@ -24,5 +24,9 @@
       <footer>
       </footer>
     </div>
+
+    <script type="text/javascript" src="/javascripts/jquery.js"></script>
+    <script type="text/javascript" src="/javascripts/prism.js"></script>
+    <script type="text/javascript" src="/javascripts/application.js"></script>
   </body>
 </html>

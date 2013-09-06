@@ -3,3 +3,4 @@ permalink: none
 pygments: false
 lsi: false
 safe: true
+exclude: ['tasks', '.ruby-version', 'README.md']
