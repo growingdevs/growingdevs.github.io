@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Welcome to Jekyll!"
+author: Doctor Jekyll
 created_at: 2013-08-06 16:58:11 -04:00
 summary: "Short post welcoming you to Jekyll. And here's a second sentence since we like it to be a bit longer."
 tags: jekyll update

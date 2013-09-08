@@ -13,8 +13,7 @@ body {
   font: 300 16px/1.4em $helvetica;
 }
 
-h1,h2,h3 {
-}
+h1,h2,h3 {}
 
 a {
   color: $link-color;
@@ -64,14 +63,14 @@ article {
   h1 {
     font-size: 1.2em;
     font-weight: normal;
-    margin: .25em 0;
+    margin: .25em 0 0 0;
 
     a {
       text-transform: uppercase;
     }
 
     @include respond-to($small) {
-      margin: 1em 0 .5em 0;
+      margin: 1em 0 0 0;
     }
   }
 
@@ -81,6 +80,17 @@ article {
 
     @include respond-to($small) {
       float: right;
+    }
+  }
+
+  span.author {
+    display: block;
+    // font-size: 80%;
+    margin-bottom: 1em;
+
+    em {
+      color: $tag-color;
+      font-style: italic;
     }
   }
 
