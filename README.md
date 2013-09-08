@@ -26,3 +26,8 @@ content about the technology, techniques, and process the authors are using.
 3. Run with `foreman start`
 4. Create a PR with your new post
 5. After a little bit of editorial review, merge and push
+
+### Adding a New Author ###
+
+1. Run thor author:create "Author Name" author-name to build an author page for Author Name in /authors/aname.html
+2. Add the author to _config.yml with id: author-name, and name: Author Name
