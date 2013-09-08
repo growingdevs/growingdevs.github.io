@@ -1,0 +1,37 @@
+---
+layout: application
+title: Growing Devs Archive
+---
+
+<ul class="years">
+  {% for post in site.posts %}
+    {% capture this_year %}{{post.date | date:'%Y'}}{% endcapture %}
+
+    {% if post.previous %}
+      {% capture last_year %}{{post.previous.date | date:'%Y'}}{% endcapture %}
+
+      {% if last_year != this_year %}
+        </ul><!-- end posts -->
+      </li><!-- end {{last_year}} -->
+      <li class="year"><!-- start {{this_year}} -->
+        <h3>{{this_year}}</h3>
+        <ul class="posts"><!-- start posts -->
+      {% endif %}
+
+    {% else %}
+      <li class="year"><!-- start {{this_year}} -->
+        <h3>{{this_year}}</h3>
+        <ul class="posts"><!-- start posts -->
+    {% endif %}
+
+          <li>
+            <span class="created-at">{{ post.created_at | date:'%b %d' }}</span>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+
+    {% unless post.next %}
+        </ul><!-- end posts -->
+      </li><!-- end {{last_year}} -->
+    {% endunless %}
+  {% endfor %}
+</ul>

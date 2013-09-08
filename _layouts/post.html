@@ -4,7 +4,7 @@ trigger: post
 ---
 
 <article>
-  <span class="created-at">{{ page.created_at | date:'%Y-%m-%d' }}</span>
+  <span class="created-at">{{ page.created_at | date:'%b %d, %Y' }}</span>
   <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
   <span class="author"><em>by</em> {{page.author}}</span>
 

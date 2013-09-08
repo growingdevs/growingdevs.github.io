@@ -9,7 +9,7 @@
 }
 
 body {
-  color: #444;
+  color: $primary-font-color;
   font: 300 16px/1.4em $helvetica;
 }
 
@@ -125,6 +125,39 @@ article {
     // @include respond-to($small) {
     //   margin-top: .5em;
     // }
+  }
+}
+
+// POSTS INDEX
+
+ul.years {
+  li.year {
+    // border-bottom: 1px solid $tag-color;
+
+    h3 {
+      font-size: 110%;
+      text-align: center;
+      margin: 1em 0 0.5em 0;
+
+      @include respond-to($small) {
+        text-align: left;
+      }
+    }
+
+    ul.posts {
+      li {
+        padding: 0.25em 0;
+        border-bottom: 1px solid $tag-color;
+
+        a {
+          text-transform: uppercase;
+        }
+
+        span.created-at {
+          float: right;
+        }
+      }
+    }
   }
 }
 

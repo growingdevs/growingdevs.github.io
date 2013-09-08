@@ -72,7 +72,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 11, ../_sass/application.scss */
 body {
-  color: #444;
+  color: #444444;
   font: 300 16px/1.4em Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -182,6 +182,32 @@ article ul.tags li {
   font-size: 80%;
   display: inline;
   color: #aaaaaa;
+}
+
+/* line 137, ../_sass/application.scss */
+ul.years li.year h3 {
+  font-size: 110%;
+  text-align: center;
+  margin: 1em 0 0.5em 0;
+}
+@media only screen and (min-width: 481px) {
+  /* line 137, ../_sass/application.scss */
+  ul.years li.year h3 {
+    text-align: left;
+  }
+}
+/* line 148, ../_sass/application.scss */
+ul.years li.year ul.posts li {
+  padding: 0.25em 0;
+  border-bottom: 1px solid #aaaaaa;
+}
+/* line 152, ../_sass/application.scss */
+ul.years li.year ul.posts li a {
+  text-transform: uppercase;
+}
+/* line 156, ../_sass/application.scss */
+ul.years li.year ul.posts li span.created-at {
+  float: right;
 }
 
 /* Prism
