@@ -3,6 +3,18 @@ $primary-font-color: #444444;
 $link-color: #6669F2;
 $tag-color: #AAA;
 
+$black: #000000;
+$white: #FFFFFF;
+$grey86: scale-lightness($black, 86.3%);
+$grey89: scale-lightness($black, 89.8%);
+$grey93: scale-lightness($black, 93.3%);
+$grey97: scale-lightness($black, 97.6%);
+
+$grey20: scale-lightness($black, 20%); /* 333 */
+$grey40: scale-lightness($black, 40%); /* 666 */
+$grey60: scale-lightness($black, 60%); /* 999 */
+$grey80: scale-lightness($black, 80%);
+
 // RESPONSIVE SIZES
 $small: "(min-width: 481px)";
 $large: "(min-width: 769px)";

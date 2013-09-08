@@ -18,6 +18,10 @@ h1,h2,h3 {}
 a {
   color: $link-color;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .container {
@@ -28,6 +32,20 @@ a {
   @include respond-to($large) {
     padding: 0;
     width: 768px;
+  }
+}
+
+// NAVIGATION
+nav {
+  text-align: center;
+
+  ul {
+    li {
+      padding: 0.25em 0;
+      padding-right: 0.5em;
+      text-align: center;
+      display: inline-block;
+    }
   }
 }
 
@@ -43,6 +61,12 @@ header {
     // font-weight: lighter;
     // text-transform: uppercase;
 
+    @include respond-to($small) {
+      text-align: left;
+    }
+  }
+
+  nav {
     @include respond-to($small) {
       text-align: left;
     }
@@ -129,10 +153,13 @@ article {
 }
 
 // POSTS INDEX
-
 ul.years {
   li.year {
-    // border-bottom: 1px solid $tag-color;
+    border-bottom: 1px solid $grey86;
+
+    // &:last-child {
+    //   border-bottom: none;
+    // }
 
     h3 {
       font-size: 110%;
@@ -146,10 +173,10 @@ ul.years {
 
     ul.posts {
       li {
-        padding: 0.25em 0;
-        border-bottom: 1px solid $tag-color;
-
         a {
+          display: block;
+          margin-right: 10%;
+          padding: 0.25em 0;
           text-transform: uppercase;
         }
 
@@ -161,6 +188,30 @@ ul.years {
   }
 }
 
+// AUTHORS INDEX
+ul.authors {
+  margin-top: 1em;
+
+  li {
+    border-bottom: 1px solid $grey86;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    a {
+      display: block;
+      padding: 0.25em 0;
+      text-transform: uppercase;
+    }
+  }
+}
+
 // FOOTER
+
+footer {
+  margin-top: 2em;
+  border-top: 1px solid $grey86;
+}
 
 @import "highlighting";

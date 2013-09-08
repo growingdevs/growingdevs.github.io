@@ -1,0 +1,12 @@
+---
+layout: application
+title: Growing Devs Authors
+---
+
+<ul class="authors">
+  {% for author in site.authors %}
+    <li>
+      <a href="/authors/{{author.id}}.html">{{author.name}}</a>
+    </li>
+  {% endfor %}
+</ul>
