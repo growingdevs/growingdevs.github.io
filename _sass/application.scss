@@ -173,17 +173,24 @@ ul.years {
 
     ul.posts {
       li {
-        a {
-          display: block;
-          margin-right: 10%;
-          padding: 0.25em 0;
-          text-transform: uppercase;
-        }
-
-        span.created-at {
-          float: right;
-        }
+        a {}
+        span.created-at {}
       }
+    }
+  }
+}
+
+ul.posts {
+  li {
+    a {
+      display: block;
+      margin-right: 10%;
+      padding: 0.25em 0;
+      text-transform: uppercase;
+    }
+
+    span.created-at {
+      float: right;
     }
   }
 }
@@ -203,6 +210,19 @@ ul.authors {
       display: block;
       padding: 0.25em 0;
       text-transform: uppercase;
+    }
+  }
+}
+
+// AUTHOR POSTS INDEX
+ul.author-posts {
+  margin-top: 1em;
+
+  li {
+    border-bottom: 1px solid $grey86;
+
+    &:last-child {
+      border-bottom: none;
     }
   }
 }

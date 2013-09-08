@@ -1,0 +1,15 @@
+---
+layout: application
+trigger: author
+---
+
+<ul class="posts author-posts">
+{% for post in site.posts do %}
+  {% if post.author == page.name %}
+    <li>
+      <span class="created-at">{{ post.created_at | date:'%b %d, %Y' }}</span>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>
