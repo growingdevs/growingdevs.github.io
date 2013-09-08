@@ -1,0 +1,32 @@
+---
+extension: xml
+layout: false
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Growing Devs</title>
+  <link href="http://growingdevs.com/feed.xml" rel="self" />
+  <link href="http://growingdevs.com/" />
+  <id>http://growingdevs.com/</id>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <author>
+    <name>Growing Devs</name>
+    <email>growingdevs@gmail.com</email>
+  </author>
+
+  {% for post in site.posts limit:10 %}
+    <entry>
+      <id>http://growingdevs.com{{post.id}}</id>
+      <title>{{post.title | xml_escape}}</title>
+      <link href="http://growingdevs.com{{post.url}}" />
+      <updated>{{post.created_at | date_to_xmlschema }}</updated>
+      <author>
+        <name>{{post.author | xml_escape}}</name>
+      </author>
+      <content type="html">
+        {{post.content | xml_escape}}
+      </content>
+    </entry>
+  {% endfor %}
+</feed>
