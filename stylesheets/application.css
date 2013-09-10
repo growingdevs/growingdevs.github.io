@@ -197,80 +197,94 @@ article p.summary {
 article pre {
   margin-bottom: 1em;
 }
+/* line 133, ../_sass/application.scss */
+article ul {
+  margin-left: 0.5em;
+  margin-bottom: 1em;
+}
 /* line 137, ../_sass/application.scss */
+article ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+/* line 143, ../_sass/application.scss */
+article ul.tags {
+  margin: 0;
+}
+/* line 148, ../_sass/application.scss */
 article ul.tags:before {
   font-size: 80%;
   content: 'tags: ';
 }
-/* line 142, ../_sass/application.scss */
+/* line 153, ../_sass/application.scss */
 article ul.tags li {
   font-size: 80%;
   display: inline;
   color: #aaaaaa;
 }
 
-/* line 157, ../_sass/application.scss */
+/* line 168, ../_sass/application.scss */
 ul.years li.year {
   border-bottom: 1px solid gainsboro;
 }
-/* line 164, ../_sass/application.scss */
+/* line 175, ../_sass/application.scss */
 ul.years li.year h3 {
   font-size: 110%;
   text-align: center;
   margin: 1em 0 0.5em 0;
 }
 @media only screen and (min-width: 481px) {
-  /* line 164, ../_sass/application.scss */
+  /* line 175, ../_sass/application.scss */
   ul.years li.year h3 {
     text-align: left;
   }
 }
 
-/* line 185, ../_sass/application.scss */
+/* line 196, ../_sass/application.scss */
 ul.posts li a {
   display: block;
   margin-right: 10%;
   padding: 0.25em 0;
   text-transform: uppercase;
 }
-/* line 192, ../_sass/application.scss */
+/* line 203, ../_sass/application.scss */
 ul.posts li span.created-at {
   float: right;
 }
 
-/* line 199, ../_sass/application.scss */
+/* line 210, ../_sass/application.scss */
 ul.authors {
   margin-top: 1em;
 }
-/* line 202, ../_sass/application.scss */
+/* line 213, ../_sass/application.scss */
 ul.authors li {
   border-bottom: 1px solid gainsboro;
 }
-/* line 205, ../_sass/application.scss */
+/* line 216, ../_sass/application.scss */
 ul.authors li:last-child {
   border-bottom: none;
 }
-/* line 209, ../_sass/application.scss */
+/* line 220, ../_sass/application.scss */
 ul.authors li a {
   display: block;
   padding: 0.25em 0;
   text-transform: uppercase;
 }
 
-/* line 218, ../_sass/application.scss */
+/* line 229, ../_sass/application.scss */
 ul.author-posts {
   margin-top: 1em;
 }
-/* line 221, ../_sass/application.scss */
+/* line 232, ../_sass/application.scss */
 ul.author-posts li {
   border-bottom: 1px solid gainsboro;
 }
-/* line 224, ../_sass/application.scss */
+/* line 235, ../_sass/application.scss */
 ul.author-posts li:last-child {
   border-bottom: none;
 }
 
-/* line 232, ../_sass/application.scss */
+/* line 243, ../_sass/application.scss */
 footer {
   margin-top: 2em;
   border-top: 1px solid gainsboro;

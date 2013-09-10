@@ -130,9 +130,20 @@ article {
     margin-bottom: 1em;
   }
 
+  ul {
+    margin-left: 0.5em;
+    margin-bottom: 1em;
+
+    li {
+      list-style-type: disc;
+      list-style-position: inside;
+    }
+  }
+
   ul.tags {
     // float: right;
     // margin-top: .5em;
+    margin: 0;
 
     &:before {
       font-size: 80%;
