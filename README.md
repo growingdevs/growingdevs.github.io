@@ -29,5 +29,5 @@ content about the technology, techniques, and process the authors are using.
 
 ### Adding a New Author ###
 
-1. Run thor author:create "Author Name" author-name to build an author page for Author Name in /authors/aname.html
+1. Run thor author:create "Author Name" author-name to build an author page for Author Name in /authors/author-name.html
 2. Add the author to _config.yml with id: author-name, and name: Author Name
