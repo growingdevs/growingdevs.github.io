@@ -16,9 +16,9 @@ experiences – through writing and through code – in growing software,
 themselves, and other developers. Or, just to write about any nerdy thing
 we want to write about.
 
-The group is fluid, some devs will write only once, and we hope that new devs
+The group is fluid. Some devs will write only once, and we hope that new devs
 will join and write. All editorial review and publishing is handled through
-github pull requests.
+GitHub pull requests.
 
 This is an experiment for us. But we think it has merit. In particular, we
 think this format has the benefits of:
