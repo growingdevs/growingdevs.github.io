@@ -6,8 +6,5 @@ safe: true
 exclude: ['tasks', '.ruby-version', 'README.md']
 authors:
   -
-    id: drjekyll
-    name: Doctor Jekyll
-  -
     id: tpitale
     name: Tony Pitale
