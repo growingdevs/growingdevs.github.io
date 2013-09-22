@@ -1,4 +1,4 @@
-/* line 17, ../../../../.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../.rvm/gems/ruby-2.1.0@growingdevs/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../.rvm/gems/ruby-2.1.0@growingdevs/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../.rvm/gems/ruby-2.1.0@growingdevs/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../.rvm/gems/ruby-2.1.0@growingdevs/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../.rvm/gems/ruby-2.1.0@growingdevs/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../.rvm/gems/ruby-2.1.0@growingdevs/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../.rvm/gems/ruby-2.1.0@growingdevs/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../.rvm/gems/ruby-2.1.0@growingdevs/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../.rvm/gems/ruby-2.1.0@growingdevs/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -76,258 +76,292 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 11, ../_sass/application.scss */
 body {
   color: #444444;
-  font: 300 16px/1.4em Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #fdfdfd;
+  font: 300 16px/1.4em "Libre Baskerville", Baskerville, serif;
+  line-height: 1.6em;
 }
 
-/* line 16, ../_sass/application.scss */
+/* line 18, ../_sass/application.scss */
+h1, h2, h3 {
+  font-family: "Lato", times, sans-serif;
+}
+
+/* line 22, ../_sass/application.scss */
 a {
   color: #6669f2;
   text-decoration: none;
 }
-/* line 20, ../_sass/application.scss */
+/* line 26, ../_sass/application.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 25, ../_sass/application.scss */
+/* line 31, ../_sass/application.scss */
+code {
+  font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
+}
+
+/* line 35, ../_sass/application.scss */
 .container {
   width: 100%;
   padding: 0 1em;
   margin: 0 auto;
 }
 @media only screen and (min-width: 769px) {
-  /* line 25, ../_sass/application.scss */
+  /* line 35, ../_sass/application.scss */
   .container {
     padding: 0;
     width: 768px;
   }
 }
 
-/* line 37, ../_sass/application.scss */
+/* line 47, ../_sass/application.scss */
 nav {
   text-align: center;
+  font-family: "Lato", times, sans-serif;
 }
-/* line 41, ../_sass/application.scss */
+/* line 52, ../_sass/application.scss */
 nav ul li {
   padding: 0.25em 0;
   padding-right: 0.5em;
   text-align: center;
   display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: .05em;
 }
 
-/* line 52, ../_sass/application.scss */
+/* line 65, ../_sass/application.scss */
 header {
   margin-top: 1em;
 }
-/* line 55, ../_sass/application.scss */
+/* line 68, ../_sass/application.scss */
 header h1 {
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 2.0em;
+  text-transform: uppercase;
   text-align: center;
+  letter-spacing: .05em;
 }
 @media only screen and (min-width: 481px) {
-  /* line 55, ../_sass/application.scss */
+  /* line 68, ../_sass/application.scss */
   header h1 {
     text-align: left;
   }
 }
 @media only screen and (min-width: 481px) {
-  /* line 67, ../_sass/application.scss */
+  /* line 80, ../_sass/application.scss */
   header nav {
     text-align: left;
   }
 }
 
-/* line 75, ../_sass/application.scss */
+/* line 88, ../_sass/application.scss */
 p.intro {
   margin: 1em 0 2em 0;
-  line-height: 1.2em;
+  padding-left: 3em;
+  padding-right: 6em;
+  text-align: justify;
+  line-height: 1.8em;
+  font-size: 80%;
 }
 
-/* line 81, ../_sass/application.scss */
+/* line 98, ../_sass/application.scss */
 article {
   margin: 1em 0;
 }
-/* line 85, ../_sass/application.scss */
+/* line 102, ../_sass/application.scss */
 article h1 {
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-weight: normal;
-  margin: .25em 0 0 0;
+  margin: 0.25em 0 0 0;
+  line-height: 1.8em;
 }
-/* line 90, ../_sass/application.scss */
+/* line 108, ../_sass/application.scss */
 article h1 a {
-  text-transform: uppercase;
+  font-weight: bold;
 }
 @media only screen and (min-width: 481px) {
-  /* line 85, ../_sass/application.scss */
+  /* line 102, ../_sass/application.scss */
   article h1 {
     margin: 1em 0 0 0;
   }
 }
-/* line 99, ../_sass/application.scss */
+/* line 117, ../_sass/application.scss */
 article h2 {
-  font-size: 1.05em;
+  font-size: 1.1em;
   font-weight: bold;
   margin: 2em 0 0.5em 0;
 }
-/* line 105, ../_sass/application.scss */
+/* line 123, ../_sass/application.scss */
 article h3 {
   color: #999999;
   font-weight: bold;
   margin: 1em 0 0.25em 0;
 }
-/* line 111, ../_sass/application.scss */
+/* line 129, ../_sass/application.scss */
 article span.created-at {
   display: block;
   text-align: center;
+  font-family: "Lato", times, sans-serif;
+  line-height: 1.8em;
+  margin-top: 1em;
 }
 @media only screen and (min-width: 481px) {
-  /* line 111, ../_sass/application.scss */
+  /* line 129, ../_sass/application.scss */
   article span.created-at {
     float: right;
   }
 }
-/* line 120, ../_sass/application.scss */
+/* line 141, ../_sass/application.scss */
 article span.author {
   display: block;
+  font-size: 80%;
   margin-bottom: 1em;
+  font-weight: 400;
 }
-/* line 125, ../_sass/application.scss */
+/* line 147, ../_sass/application.scss */
 article span.author em {
-  color: #aaaaaa;
-  font-style: italic;
+  font-weight: 200;
 }
-/* line 131, ../_sass/application.scss */
+/* line 152, ../_sass/application.scss */
 article p {
   margin-bottom: 1em;
+  line-height: 1.8em;
+  font-family: "Libre Baskerville", Baskerville, serif;
 }
-/* line 134, ../_sass/application.scss */
+/* line 154, ../_sass/application.scss */
 article p strong {
   font-weight: bold;
 }
-/* line 139, ../_sass/application.scss */
+/* line 161, ../_sass/application.scss */
 article p.summary {
   margin-bottom: 0.25em;
 }
-/* line 143, ../_sass/application.scss */
+/* line 165, ../_sass/application.scss */
 article pre {
   margin-bottom: 1em;
 }
-/* line 147, ../_sass/application.scss */
+/* line 169, ../_sass/application.scss */
 article ul {
   margin-left: 0.5em;
   margin-bottom: 1em;
+  font-family: "Libre Baskerville", Baskerville, serif;
 }
-/* line 151, ../_sass/application.scss */
+/* line 174, ../_sass/application.scss */
 article ul li {
   list-style-type: disc;
   list-style-position: inside;
 }
-/* line 157, ../_sass/application.scss */
+/* line 180, ../_sass/application.scss */
 article ol {
   margin-left: 0.5em;
   margin-bottom: 1em;
 }
-/* line 161, ../_sass/application.scss */
+/* line 184, ../_sass/application.scss */
 article ol li {
   list-style-type: decimal;
   list-style-position: inside;
 }
-/* line 167, ../_sass/application.scss */
+/* line 190, ../_sass/application.scss */
 article ul.tags {
+  font-family: "Lato", times, sans-serif;
   margin: 0;
 }
-/* line 172, ../_sass/application.scss */
+/* line 196, ../_sass/application.scss */
 article ul.tags:before {
   font-size: 80%;
   content: 'tags: ';
 }
-/* line 177, ../_sass/application.scss */
+/* line 201, ../_sass/application.scss */
 article ul.tags li {
   font-size: 80%;
   display: inline;
   color: #aaaaaa;
 }
-/* line 189, ../_sass/application.scss */
+/* line 213, ../_sass/application.scss */
 article em {
   font-style: italic;
 }
-/* line 193, ../_sass/application.scss */
+/* line 217, ../_sass/application.scss */
 article blockquote {
   padding: 1.5em;
   margin: 0.5em 0;
   background: #F9F9F9;
-  border-left: 0.25em solid #CCC;
-  border-right: 0.25em solid #CCC;
+  border-left: 0.25em solid #cccccc;
+  border-right: 0.25em solid #cccccc;
 }
-/* line 200, ../_sass/application.scss */
+/* line 224, ../_sass/application.scss */
 article blockquote p {
   display: inline;
   line-height: 1.7em;
 }
 
-/* line 209, ../_sass/application.scss */
+/* line 233, ../_sass/application.scss */
 ul.years li.year {
   border-bottom: 1px solid gainsboro;
 }
-/* line 216, ../_sass/application.scss */
+/* line 240, ../_sass/application.scss */
 ul.years li.year h3 {
   font-size: 110%;
   text-align: center;
   margin: 1em 0 0.5em 0;
 }
 @media only screen and (min-width: 481px) {
-  /* line 216, ../_sass/application.scss */
+  /* line 240, ../_sass/application.scss */
   ul.years li.year h3 {
     text-align: left;
   }
 }
+/* line 251, ../_sass/application.scss */
+ul.years li.year ul.posts li {
+  font-family: "Lato", times, sans-serif;
+  font-weight: bold;
+}
 
-/* line 237, ../_sass/application.scss */
+/* line 263, ../_sass/application.scss */
 ul.posts li a {
   display: block;
   margin-right: 10%;
   padding: 0.25em 0;
-  text-transform: uppercase;
 }
-/* line 244, ../_sass/application.scss */
+/* line 269, ../_sass/application.scss */
 ul.posts li span.created-at {
   float: right;
 }
 
-/* line 251, ../_sass/application.scss */
+/* line 276, ../_sass/application.scss */
 ul.authors {
   margin-top: 1em;
 }
-/* line 254, ../_sass/application.scss */
+/* line 279, ../_sass/application.scss */
 ul.authors li {
   border-bottom: 1px solid gainsboro;
+  font-family: "Lato", times, sans-serif;
 }
-/* line 257, ../_sass/application.scss */
+/* line 283, ../_sass/application.scss */
 ul.authors li:last-child {
   border-bottom: none;
 }
-/* line 261, ../_sass/application.scss */
+/* line 287, ../_sass/application.scss */
 ul.authors li a {
   display: block;
   padding: 0.25em 0;
-  text-transform: uppercase;
 }
 
-/* line 270, ../_sass/application.scss */
+/* line 295, ../_sass/application.scss */
 ul.author-posts {
   margin-top: 1em;
 }
-/* line 273, ../_sass/application.scss */
+/* line 298, ../_sass/application.scss */
 ul.author-posts li {
   border-bottom: 1px solid gainsboro;
 }
-/* line 276, ../_sass/application.scss */
+/* line 301, ../_sass/application.scss */
 ul.author-posts li:last-child {
   border-bottom: none;
 }
 
-/* line 284, ../_sass/application.scss */
+/* line 309, ../_sass/application.scss */
 footer {
   margin-top: 2em;
   border-top: 1px solid gainsboro;
@@ -382,14 +416,14 @@ pre[class*="language-"] {
 /* line 48, ../_sass/_highlighting.scss */
 pre[class*="language-"] {
   padding: 1em;
-  margin: .5em 0;
+  margin: 0.5em 0;
   overflow: auto;
 }
 
 /* line 55, ../_sass/_highlighting.scss */
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
 }
 
 /* Inline code */
