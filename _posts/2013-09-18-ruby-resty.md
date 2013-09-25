@@ -18,11 +18,10 @@ remembering your cryptic, hashed API keys and header names.
 
 It's such a great tool, except resty currently [doesn't work in zsh][3].
 
-I wanted to submit a PR to fix the problem and started thinking maybe a
-shell script isn't the best approach for community development. Coming from a
-Ruby background, shell script syntax is so _hard to read_. Then I thought, "What about adding functionality to Resty? 
+After thinking about it, a shell script isn't the best approach for community development. Coming from a
+Ruby background, shell script syntax is so _hard to read_. What about adding functionality to Resty? 
 Can I add a new command that Resty supports? Can I have nice tests documenting functionality? 
-How about some continuous integration?"
+How about some continuous integration?
 
 And I embarked on a [Ruby Port of Resty][7].
 
