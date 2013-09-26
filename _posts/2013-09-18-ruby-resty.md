@@ -39,10 +39,10 @@ POST /api/nyan data               # User assigned variable in the REPL
 
 Pretty nifty.
 
-Something Ruby Resty differs from Resty is host aliasing. Rather than specifiying a hostname, 
+One way Ruby Resty differs from Resty is host aliasing. Rather than specifiying a hostname, 
 which maps to the config file, users can specify an easy to remember alias defined in ~/.ruby_resty.yml.
 
-This is still a working in progress and would love some feedback. If you're interested,
+This is still a working in progress and I would love some feedback. If you're interested,
 submit a [ruby-resty][7] issue or reply to this post.
 
 [1]: https://github.com/micha/resty
@@ -50,6 +50,4 @@ submit a [ruby-resty][7] issue or reply to this post.
 [3]: https://github.com/micha/resty/issues/38
 [4]: https://github.com/pry/pry
 [5]: https://github.com/pry/pry/wiki/Custom-commands
-[6]: https://twitter.com/tpitale
 [7]: https://github.com/austenito/ruby-resty
-[8]: https://github.com/dkaufman
