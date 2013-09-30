@@ -4,7 +4,7 @@ title: Ruby Resty
 subtitle: Ruby port of Resty, a command-line REST client
 author: Austen Ito
 ga_id: 
-created_at: 2013-09-18 07:50:43 -0400
+created_at: 2013-09-30 07:50:43 -0400
 layout: post
 tags: ruby gems
 summary: "Software is hard. Writing cURL requests shouldn't be."
