@@ -7,7 +7,7 @@ ga_id:
 created_at: 2013-11-05 12:25:14.885273 -05:00
 layout: post
 tags: RubyMotion
-summary:
+summary: "A few of the benefits of using the RubyMotion toolchain to develop iOS apps from a beginner's perspective."
 ---
 
 Like many others, I initially started to program because I had an idea. After a brief stint with PHP, I dove into Ruby/Rails and started developing my app, [YourTurn](http://yourturn.org). During development, there was a  lot I wanted to learn about the technologies (and their minutiae) I was discovering, but my focus was getting something tangible to appear on my screen. Not only to prototype my app, but also because seeing results drove me to learn more which is important for beginners such as myself. (Topic for a future post? You bet.)
