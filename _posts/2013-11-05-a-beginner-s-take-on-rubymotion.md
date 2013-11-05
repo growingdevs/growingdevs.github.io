@@ -10,6 +10,11 @@ tags: RubyMotion
 summary: "A few of the benefits of using the RubyMotion toolchain to develop iOS apps from a beginner's perspective."
 ---
 
+>"A little over a year ago I was in bondage,
+>and now I'm back out here reaping the blessings
+>and getting the benefits that go along with it"
+>- Pimp C's last interview, from Jay-Z's _FuckWithMeYouKnowIGotIt_
+
 Like many others, I initially started to program because I had an idea. After a brief stint with PHP, I dove into Ruby/Rails and started developing my app, [YourTurn](http://yourturn.org). During development, there was a  lot I wanted to learn about the technologies (and their minutiae) I was discovering, but my focus was getting something tangible to appear on my screen. Not only to prototype my app, but also because seeing results drove me to learn more which is important for beginners such as myself. (Topic for a future post? You bet.)
 
 When I set out to make an iOS app for YourTurn, I faced a similar decision: either learn a new language - Objective C - or utilize something I was more familiar with to get something done. To be honest, I didn't really consider the latter until I heard about RubyMotion, and when I did the choice was easy.*
@@ -24,7 +29,7 @@ Here's RubyMotion:
 
     UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
 
-I don't know about you, dear reader, but I find the RubyMotion way much more readable as well as easier to type.**
+I don't know about you, dear reader, but I find the RubyMotion way more readable as well as easier to type.**
 
 As a beginner, a technology is only as valuable to me as the community supporting it. From the folks at HipByte to the authors of its many [wrappers and libraries](http://rubymotion-wrappers.com/), it's clear that the folks behind RubyMotion want it to succeed. I'm less than a year into the toolchain but I can confidently say I wouldn't have been able to release version 1.0.0 of my app if it weren't for resources like Clay Allsopp's tutorial and PragProg book, as well as BubbleWrap, Formotion, and Sugarcube. Resources like these continue to grow each day, and I know I'll continue to lean on them as I release future versions.
 
