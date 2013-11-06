@@ -15,7 +15,7 @@ summary: "A few of the benefits of using the RubyMotion toolchain to develop iOS
 >and getting the benefits that go along with it"
 >- Pimp C's last interview, from Jay-Z's _FuckWithMeYouKnowIGotIt_
 
-Like many others, I initially started to program because I had an idea. After a brief stint with PHP, I dove into Ruby/Rails and started developing my app, [YourTurn](http://yourturn.org). During development, there was a  lot I wanted to learn about the technologies (and their minutiae) I was discovering, but my focus was getting something tangible to appear on my screen. That wasn't just for the purposes of prototype my app. After all, seeing results drove me to learn more which is important for beginners such as myself. (Topic for a future post? You bet.)
+Like many others, I initially started to program because I had an idea. After a brief stint with PHP, I dove into Ruby/Rails and started developing my app, [YourTurn](http://yourturn.org). During development, there was a lot I wanted to learn about the technologies (and their minutiae) I was discovering, but my focus was getting something tangible to appear on my screen. This not only helped me prototype my app, but also drove me to learn more. (Topic for a future post? You bet.)
 
 When I set out to make an iOS app for YourTurn, I faced a similar decision: either learn a new language - Objective C - or utilize something I was more familiar with to get something done. To be honest, I didn't really consider the latter until I heard about RubyMotion, and when I did the choice was easy.*
 
