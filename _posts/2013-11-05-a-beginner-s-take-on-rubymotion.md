@@ -37,7 +37,14 @@ For me though, the best thing about RubyMotion is that it removes extraneous com
 
 So am I saying RubyMotion is for everyone? No. It's obviously best for people with varying degrees of Ruby knowledge.
 
-Is it perfect? No. Then again, nothing is.
+Is it perfect? No. A few downsides are that:
+
+1) It is not fully [open source](http://merbist.com/2012/05/04/macruby-on-ios-rubymotion-review/).
+2) It has had some big issues like [RM-3](http://joshsymonds.com/blog/2013/06/26/why-im-not-using-rubymotion-in-production/) (which, in fairness was prioritized and resolved by HipByte).
+3) It is a bit [tricky with blocks](https://groups.google.com/d/msg/rubymotion/-5QkGWvo9ew/epqVwJ2I7T8J).
+4) The license is pricey at [$199.99](http://sites.fastspring.com/hipbyte/product/rubymotion).
+
+Collectively, these issues represent exactly what RubyMotion is: a growing toolchain from a bootstrapped business. Aside from the price, they shouldn't dissuade anyone from getting their hands dirty.
 
 Simply put: for Ruby developers, RubyMotion provides a lower barrier of entry to iOS Development. For beginners like me, it's the best tool to use if you want to get an app out quickly. For that, I'm grateful to HipByte and the community behind RubyMotion.
 
