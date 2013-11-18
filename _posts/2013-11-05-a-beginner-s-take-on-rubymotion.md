@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: A Beginner's Take on RubyMotion
 subtitle:
 author: Travis Valentine
