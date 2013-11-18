@@ -7,7 +7,7 @@ ga_id:
 created_at: 2013-11-05 12:25:14.885273 -05:00
 published_at: 2013-11-05 12:25:14.885273 -05:00
 layout: post
-tags: RubyMotion
+tags: rubymotion
 summary: "A few of the benefits of using the RubyMotion toolchain to develop iOS apps from a beginner's perspective."
 ---
 
