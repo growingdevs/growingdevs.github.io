@@ -171,6 +171,23 @@ article {
     //   margin-top: .5em;
     // }
   }
+
+  em {
+    font-style: italic;
+  }
+
+  blockquote {
+    padding: 1.5em;
+    margin: 0.5em 0;
+    background: #F9F9F9;
+    border-left: 0.25em solid #CCC;
+    border-right: 0.25em solid #CCC;
+
+    p {
+      display: inline;
+      line-height: 1.7em;
+    }
+  }
 }
 
 // POSTS INDEX

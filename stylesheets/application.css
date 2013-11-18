@@ -232,69 +232,86 @@ article ul.tags li {
   display: inline;
   color: #aaaaaa;
 }
+/* line 175, ../_sass/application.scss */
+article em {
+  font-style: italic;
+}
+/* line 179, ../_sass/application.scss */
+article blockquote {
+  padding: 1.5em;
+  margin: 0.5em 0;
+  background: #F9F9F9;
+  border-left: 0.25em solid #CCC;
+  border-right: 0.25em solid #CCC;
+}
+/* line 186, ../_sass/application.scss */
+article blockquote p {
+  display: inline;
+  line-height: 1.7em;
+}
 
-/* line 178, ../_sass/application.scss */
+/* line 195, ../_sass/application.scss */
 ul.years li.year {
   border-bottom: 1px solid gainsboro;
 }
-/* line 185, ../_sass/application.scss */
+/* line 202, ../_sass/application.scss */
 ul.years li.year h3 {
   font-size: 110%;
   text-align: center;
   margin: 1em 0 0.5em 0;
 }
 @media only screen and (min-width: 481px) {
-  /* line 185, ../_sass/application.scss */
+  /* line 202, ../_sass/application.scss */
   ul.years li.year h3 {
     text-align: left;
   }
 }
 
-/* line 206, ../_sass/application.scss */
+/* line 223, ../_sass/application.scss */
 ul.posts li a {
   display: block;
   margin-right: 10%;
   padding: 0.25em 0;
   text-transform: uppercase;
 }
-/* line 213, ../_sass/application.scss */
+/* line 230, ../_sass/application.scss */
 ul.posts li span.created-at {
   float: right;
 }
 
-/* line 220, ../_sass/application.scss */
+/* line 237, ../_sass/application.scss */
 ul.authors {
   margin-top: 1em;
 }
-/* line 223, ../_sass/application.scss */
+/* line 240, ../_sass/application.scss */
 ul.authors li {
   border-bottom: 1px solid gainsboro;
 }
-/* line 226, ../_sass/application.scss */
+/* line 243, ../_sass/application.scss */
 ul.authors li:last-child {
   border-bottom: none;
 }
-/* line 230, ../_sass/application.scss */
+/* line 247, ../_sass/application.scss */
 ul.authors li a {
   display: block;
   padding: 0.25em 0;
   text-transform: uppercase;
 }
 
-/* line 239, ../_sass/application.scss */
+/* line 256, ../_sass/application.scss */
 ul.author-posts {
   margin-top: 1em;
 }
-/* line 242, ../_sass/application.scss */
+/* line 259, ../_sass/application.scss */
 ul.author-posts li {
   border-bottom: 1px solid gainsboro;
 }
-/* line 245, ../_sass/application.scss */
+/* line 262, ../_sass/application.scss */
 ul.author-posts li:last-child {
   border-bottom: none;
 }
 
-/* line 253, ../_sass/application.scss */
+/* line 270, ../_sass/application.scss */
 footer {
   margin-top: 2em;
   border-top: 1px solid gainsboro;
