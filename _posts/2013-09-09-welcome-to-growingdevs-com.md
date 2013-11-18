@@ -5,6 +5,7 @@ subtitle: What's it All About?
 author: Tony Pitale
 ga_id: 
 created_at: 2013-09-09 20:12:52.192179 -04:00
+published_at: 2013-09-09 20:12:52.192179 -04:00
 layout: post
 tags: introduction welcome
 summary: "Welcome to growingdevs.com! We think we have an interesting idea and

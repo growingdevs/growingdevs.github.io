@@ -20,7 +20,7 @@ layout: false
       <id>http://growingdevs.com{{post.id}}</id>
       <title>{{post.title | xml_escape}}</title>
       <link href="http://growingdevs.com{{post.url}}" />
-      <updated>{{post.created_at | date_to_xmlschema }}</updated>
+      <updated>{{post.published_at | date_to_xmlschema }}</updated>
       <author>
         <name>{{post.author | xml_escape}}</name>
       </author>

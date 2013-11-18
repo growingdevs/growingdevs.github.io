@@ -21,7 +21,7 @@ title: Growing Devs Archive
         <ul class="posts"><!-- start posts -->
     {% endif %}
           <li>
-            <span class="created-at">{{ post.created_at | date:'%b %d' }}</span>
+            <span class="created-at">{{ post.published_at | date:'%b %d' }}</span>
             <a href="{{ post.url }}">{{ post.title }}</a>
           </li>
     {% unless post.previous %}

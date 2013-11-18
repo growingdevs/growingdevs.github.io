@@ -7,7 +7,7 @@ trigger: author
 {% for post in site.posts do %}
   {% if post.author == page.name %}
     <li>
-      <span class="created-at">{{ post.created_at | date:'%b %d, %Y' }}</span>
+      <span class="created-at">{{ post.published_at | date:'%b %d, %Y' }}</span>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endif %}
