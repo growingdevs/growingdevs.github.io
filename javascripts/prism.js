@@ -28,3 +28,5 @@ Prism.languages.ruby = {
   'ignore': /&(lt|gt|amp);/gi,
   'punctuation': /[{}[\];(),.:]/g
 };
+
+Prism.languages.objectivec = Prism.languages.clike;
