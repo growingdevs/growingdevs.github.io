@@ -140,6 +140,16 @@ article {
     }
   }
 
+  ol {
+    margin-left: 0.5em;
+    margin-bottom: 1em;
+
+    li {
+      list-style-type: decimal;
+      list-style-position: inside;
+    }
+  }
+
   ul.tags {
     // float: right;
     // margin-top: .5em;

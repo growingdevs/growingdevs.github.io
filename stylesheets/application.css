@@ -208,83 +208,93 @@ article ul li {
   list-style-position: inside;
 }
 /* line 143, ../_sass/application.scss */
+article ol {
+  margin-left: 0.5em;
+  margin-bottom: 1em;
+}
+/* line 147, ../_sass/application.scss */
+article ol li {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+/* line 153, ../_sass/application.scss */
 article ul.tags {
   margin: 0;
 }
-/* line 148, ../_sass/application.scss */
+/* line 158, ../_sass/application.scss */
 article ul.tags:before {
   font-size: 80%;
   content: 'tags: ';
 }
-/* line 153, ../_sass/application.scss */
+/* line 163, ../_sass/application.scss */
 article ul.tags li {
   font-size: 80%;
   display: inline;
   color: #aaaaaa;
 }
 
-/* line 168, ../_sass/application.scss */
+/* line 178, ../_sass/application.scss */
 ul.years li.year {
   border-bottom: 1px solid gainsboro;
 }
-/* line 175, ../_sass/application.scss */
+/* line 185, ../_sass/application.scss */
 ul.years li.year h3 {
   font-size: 110%;
   text-align: center;
   margin: 1em 0 0.5em 0;
 }
 @media only screen and (min-width: 481px) {
-  /* line 175, ../_sass/application.scss */
+  /* line 185, ../_sass/application.scss */
   ul.years li.year h3 {
     text-align: left;
   }
 }
 
-/* line 196, ../_sass/application.scss */
+/* line 206, ../_sass/application.scss */
 ul.posts li a {
   display: block;
   margin-right: 10%;
   padding: 0.25em 0;
   text-transform: uppercase;
 }
-/* line 203, ../_sass/application.scss */
+/* line 213, ../_sass/application.scss */
 ul.posts li span.created-at {
   float: right;
 }
 
-/* line 210, ../_sass/application.scss */
+/* line 220, ../_sass/application.scss */
 ul.authors {
   margin-top: 1em;
 }
-/* line 213, ../_sass/application.scss */
+/* line 223, ../_sass/application.scss */
 ul.authors li {
   border-bottom: 1px solid gainsboro;
 }
-/* line 216, ../_sass/application.scss */
+/* line 226, ../_sass/application.scss */
 ul.authors li:last-child {
   border-bottom: none;
 }
-/* line 220, ../_sass/application.scss */
+/* line 230, ../_sass/application.scss */
 ul.authors li a {
   display: block;
   padding: 0.25em 0;
   text-transform: uppercase;
 }
 
-/* line 229, ../_sass/application.scss */
+/* line 239, ../_sass/application.scss */
 ul.author-posts {
   margin-top: 1em;
 }
-/* line 232, ../_sass/application.scss */
+/* line 242, ../_sass/application.scss */
 ul.author-posts li {
   border-bottom: 1px solid gainsboro;
 }
-/* line 235, ../_sass/application.scss */
+/* line 245, ../_sass/application.scss */
 ul.author-posts li:last-child {
   border-bottom: none;
 }
 
-/* line 243, ../_sass/application.scss */
+/* line 253, ../_sass/application.scss */
 footer {
   margin-top: 2em;
   border-top: 1px solid gainsboro;
