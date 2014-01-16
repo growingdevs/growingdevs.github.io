@@ -4,13 +4,3 @@ pygments: false
 lsi: false
 safe: true
 exclude: ['tasks', '.ruby-version', 'README.md']
-authors:
-  -
-    id: tpitale
-    name: Tony Pitale
-  -
-    id: aito
-    name: Austen Ito
-  -
-    id: travisvalentine
-    name: Travis Valentine
