@@ -12,6 +12,7 @@ content about the technology, techniques, and process the authors are using.
 * Becomes a resource in its own right
 * Shared readership
 * Combined pagerank
+* Shared promotion within the group
 
 ## Getting Started ##
 
