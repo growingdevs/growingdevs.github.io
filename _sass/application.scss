@@ -102,6 +102,12 @@ article {
     margin: 2em 0 0.5em 0;
   }
 
+  h3 {
+    color: $grey60;
+    font-weight: bold;
+    margin: 1em 0 0.25em 0;
+  }
+
   span.created-at {
     display: block;
     text-align: center;
@@ -124,6 +130,10 @@ article {
 
   p {
     margin-bottom: 1em;
+
+    strong {
+      font-weight: bold;
+    }
   }
 
   p.summary {

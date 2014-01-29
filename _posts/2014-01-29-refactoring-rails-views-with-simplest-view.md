@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Refactoring Rails Views with SimplestView
 subtitle: 
 author: Tony Pitale
@@ -68,9 +68,13 @@ So, what did we do here?
 
 What are the benefits? Well, we get nicer encapsulation. We don't have to expose the instance variable inside of the ERB for this particular case
 
-But, I think the best part about all of this, is we can now **easily** test, and refactor this view because it's just a Ruby class. If we have another method `formatted_county_sales_tax`, we can create a method to do the formatting. Then, if that new formatting method is used in multiple views, it's as easy as extracting a module like `SalesTaxFormattable`.
+## Hello OO! ##
 
-If you were to move the `format_tax_rate` you would still have to share it with the helper modules for each _controller_ that might use it. Those helper modules end up being included into the aforementioned **anonymous** view class anyway!
+After this section, I want to make a quick asside to point out something important. With SimplestView, we're back to using Ruby as the Object-Oriented language that it is! If we need to share code, we make a `module` to mixin. Or, if it makes sense, we can use inheritence.
+
+If we have another method `formatted_county_sales_tax`, we can extract a method to do the formatting. Then, if that new formatting method is used in multiple views, it's as easy as extracting a module like `SalesTaxFormattable`.
+
+In addition, we can now **easily** test, and refactor this view because it's just a Ruby class.
 
 ## Controller Assignment ##
 
