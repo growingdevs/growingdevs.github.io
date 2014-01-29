@@ -13,8 +13,6 @@ body {
   font: 300 16px/1.4em $helvetica;
 }
 
-h1,h2,h3 {}
-
 a {
   color: $link-color;
   text-decoration: none;
@@ -85,7 +83,7 @@ article {
   // border-top: 1px dotted #EEE;
 
   h1 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: normal;
     margin: .25em 0 0 0;
 
@@ -96,6 +94,12 @@ article {
     @include respond-to($small) {
       margin: 1em 0 0 0;
     }
+  }
+
+  h2 {
+    font-size: 1.05em;
+    font-weight: bold;
+    margin: 2em 0 0.5em 0;
   }
 
   span.created-at {
