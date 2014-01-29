@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 title: Refactoring Rails Views with SimplestView
 subtitle: 
 author: Tony Pitale
