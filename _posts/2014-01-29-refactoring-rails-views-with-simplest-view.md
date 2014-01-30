@@ -19,7 +19,7 @@ I'm going to try to address each of these scenarios, and show you how to refacto
 
 In Rails, our ERB templates go under `app/views`. There is a logical structure to how they are organized. This is The Rails Way. By convention, the views for a controller `SalesController` goes inside the folder `app/views/sales`. Further, each action gets a file inside the sales folder, using the name of the action as the filename.
 
-The tricky bit, is these Rails "Views" aren't really view objects. The ERB templates we build, are rendered inside the context of an instance of an **anonymous** class, which inherits it's rendering abilities from ActionView::Base.
+The tricky bit is these Rails "Views" aren't really view objects. The ERB templates we build, are rendered inside the context of an instance of an **anonymous** class, which inherits it's rendering abilities from ActionView::Base.
 
 But why an anonymous class? Why does Rails hide this away from us completely?
 
