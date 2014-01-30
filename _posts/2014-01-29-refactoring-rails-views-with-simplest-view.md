@@ -49,7 +49,7 @@ And it might be used in our ERB like so:
 
 This is some very simple code. It's a naive approach to formatting the decimal value as a percentage to two decimal places.
 
-More importantly, it's only _really_ needed in one or two views to display a formatted sales tax rate. Why then, should it clutter up our `ApplicationHelper` in order to be shared? And, what happens when you have 10, 20, or more small methods just like this one?
+More importantly, it's only _really_ needed in one or two views to display a formatted sales tax rate. Why then, should it clutter up our `ApplicationHelper` in order to be shared? And what happens when you have 10, 20, or more small methods just like this one?
 
 With SimplestView, we can move the method to a better place. If we were to handle this in our `Sales::IndexView`, for example, we could do something like this:
 
