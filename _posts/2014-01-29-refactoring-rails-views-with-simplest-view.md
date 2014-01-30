@@ -70,7 +70,7 @@ What are the benefits? Well, we get nicer encapsulation. We don't have to expose
 
 ## Hello OO! ##
 
-After this section, I want to make a quick asside to point out something important. With SimplestView, we're back to using Ruby as the Object-Oriented language that it is! If we need to share code, we make a `module` to mixin. Or, if it makes sense, we can use inheritence.
+After this section, I want to make a quick aside to point out something important. With SimplestView, we're back to using Ruby as the Object-Oriented language that it is! If we need to share code, we make a `module` to mixin. Or, if it makes sense, we can use inheritence.
 
 If we have another method `formatted_county_sales_tax`, we can extract a method to do the formatting. Then, if that new formatting method is used in multiple views, it's as easy as extracting a module like `SalesTaxFormattable`.
 
