@@ -79,35 +79,35 @@ body {
   font: 300 16px/1.4em Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 18, ../_sass/application.scss */
+/* line 16, ../_sass/application.scss */
 a {
   color: #6669f2;
   text-decoration: none;
 }
-/* line 22, ../_sass/application.scss */
+/* line 20, ../_sass/application.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 27, ../_sass/application.scss */
+/* line 25, ../_sass/application.scss */
 .container {
   width: 100%;
   padding: 0 1em;
   margin: 0 auto;
 }
 @media only screen and (min-width: 769px) {
-  /* line 27, ../_sass/application.scss */
+  /* line 25, ../_sass/application.scss */
   .container {
     padding: 0;
     width: 768px;
   }
 }
 
-/* line 39, ../_sass/application.scss */
+/* line 37, ../_sass/application.scss */
 nav {
   text-align: center;
 }
-/* line 43, ../_sass/application.scss */
+/* line 41, ../_sass/application.scss */
 nav ul li {
   padding: 0.25em 0;
   padding-right: 0.5em;
@@ -115,128 +115,144 @@ nav ul li {
   display: inline-block;
 }
 
-/* line 54, ../_sass/application.scss */
+/* line 52, ../_sass/application.scss */
 header {
   margin-top: 1em;
 }
-/* line 57, ../_sass/application.scss */
+/* line 55, ../_sass/application.scss */
 header h1 {
   font-weight: 400;
   font-size: 1.5em;
   text-align: center;
 }
 @media only screen and (min-width: 481px) {
-  /* line 57, ../_sass/application.scss */
+  /* line 55, ../_sass/application.scss */
   header h1 {
     text-align: left;
   }
 }
 @media only screen and (min-width: 481px) {
-  /* line 69, ../_sass/application.scss */
+  /* line 67, ../_sass/application.scss */
   header nav {
     text-align: left;
   }
 }
 
-/* line 77, ../_sass/application.scss */
+/* line 75, ../_sass/application.scss */
 p.intro {
   margin: 1em 0 2em 0;
   line-height: 1.2em;
 }
 
-/* line 83, ../_sass/application.scss */
+/* line 81, ../_sass/application.scss */
 article {
   margin: 1em 0;
 }
-/* line 87, ../_sass/application.scss */
+/* line 85, ../_sass/application.scss */
 article h1 {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: normal;
   margin: .25em 0 0 0;
 }
-/* line 92, ../_sass/application.scss */
+/* line 90, ../_sass/application.scss */
 article h1 a {
   text-transform: uppercase;
 }
 @media only screen and (min-width: 481px) {
-  /* line 87, ../_sass/application.scss */
+  /* line 85, ../_sass/application.scss */
   article h1 {
     margin: 1em 0 0 0;
   }
 }
-/* line 101, ../_sass/application.scss */
+/* line 99, ../_sass/application.scss */
+article h2 {
+  font-size: 1.05em;
+  font-weight: bold;
+  margin: 2em 0 0.5em 0;
+}
+/* line 105, ../_sass/application.scss */
+article h3 {
+  color: #999999;
+  font-weight: bold;
+  margin: 1em 0 0.25em 0;
+}
+/* line 111, ../_sass/application.scss */
 article span.created-at {
   display: block;
   text-align: center;
 }
 @media only screen and (min-width: 481px) {
-  /* line 101, ../_sass/application.scss */
+  /* line 111, ../_sass/application.scss */
   article span.created-at {
     float: right;
   }
 }
-/* line 110, ../_sass/application.scss */
+/* line 120, ../_sass/application.scss */
 article span.author {
   display: block;
   margin-bottom: 1em;
 }
-/* line 115, ../_sass/application.scss */
+/* line 125, ../_sass/application.scss */
 article span.author em {
   color: #aaaaaa;
   font-style: italic;
 }
-/* line 121, ../_sass/application.scss */
+/* line 131, ../_sass/application.scss */
 article p {
   margin-bottom: 1em;
 }
-/* line 125, ../_sass/application.scss */
+/* line 134, ../_sass/application.scss */
+article p strong {
+  font-weight: bold;
+}
+/* line 139, ../_sass/application.scss */
 article p.summary {
   margin-bottom: 0.25em;
 }
-/* line 129, ../_sass/application.scss */
+/* line 143, ../_sass/application.scss */
 article pre {
   margin-bottom: 1em;
 }
-/* line 133, ../_sass/application.scss */
+/* line 147, ../_sass/application.scss */
 article ul {
   margin-left: 0.5em;
   margin-bottom: 1em;
 }
-/* line 137, ../_sass/application.scss */
+/* line 151, ../_sass/application.scss */
 article ul li {
   list-style-type: disc;
   list-style-position: inside;
 }
-/* line 143, ../_sass/application.scss */
+/* line 157, ../_sass/application.scss */
 article ol {
   margin-left: 0.5em;
   margin-bottom: 1em;
 }
-/* line 147, ../_sass/application.scss */
+/* line 161, ../_sass/application.scss */
 article ol li {
   list-style-type: decimal;
   list-style-position: inside;
 }
-/* line 153, ../_sass/application.scss */
+/* line 167, ../_sass/application.scss */
 article ul.tags {
   margin: 0;
 }
-/* line 158, ../_sass/application.scss */
+/* line 172, ../_sass/application.scss */
 article ul.tags:before {
   font-size: 80%;
   content: 'tags: ';
 }
-/* line 163, ../_sass/application.scss */
+/* line 177, ../_sass/application.scss */
 article ul.tags li {
   font-size: 80%;
   display: inline;
   color: #aaaaaa;
 }
-/* line 175, ../_sass/application.scss */
+/* line 189, ../_sass/application.scss */
 article em {
   font-style: italic;
 }
-/* line 179, ../_sass/application.scss */
+/* line 193, ../_sass/application.scss */
 article blockquote {
   padding: 1.5em;
   margin: 0.5em 0;
@@ -244,74 +260,74 @@ article blockquote {
   border-left: 0.25em solid #CCC;
   border-right: 0.25em solid #CCC;
 }
-/* line 186, ../_sass/application.scss */
+/* line 200, ../_sass/application.scss */
 article blockquote p {
   display: inline;
   line-height: 1.7em;
 }
 
-/* line 195, ../_sass/application.scss */
+/* line 209, ../_sass/application.scss */
 ul.years li.year {
   border-bottom: 1px solid gainsboro;
 }
-/* line 202, ../_sass/application.scss */
+/* line 216, ../_sass/application.scss */
 ul.years li.year h3 {
   font-size: 110%;
   text-align: center;
   margin: 1em 0 0.5em 0;
 }
 @media only screen and (min-width: 481px) {
-  /* line 202, ../_sass/application.scss */
+  /* line 216, ../_sass/application.scss */
   ul.years li.year h3 {
     text-align: left;
   }
 }
 
-/* line 223, ../_sass/application.scss */
+/* line 237, ../_sass/application.scss */
 ul.posts li a {
   display: block;
   margin-right: 10%;
   padding: 0.25em 0;
   text-transform: uppercase;
 }
-/* line 230, ../_sass/application.scss */
+/* line 244, ../_sass/application.scss */
 ul.posts li span.created-at {
   float: right;
 }
 
-/* line 237, ../_sass/application.scss */
+/* line 251, ../_sass/application.scss */
 ul.authors {
   margin-top: 1em;
 }
-/* line 240, ../_sass/application.scss */
+/* line 254, ../_sass/application.scss */
 ul.authors li {
   border-bottom: 1px solid gainsboro;
 }
-/* line 243, ../_sass/application.scss */
+/* line 257, ../_sass/application.scss */
 ul.authors li:last-child {
   border-bottom: none;
 }
-/* line 247, ../_sass/application.scss */
+/* line 261, ../_sass/application.scss */
 ul.authors li a {
   display: block;
   padding: 0.25em 0;
   text-transform: uppercase;
 }
 
-/* line 256, ../_sass/application.scss */
+/* line 270, ../_sass/application.scss */
 ul.author-posts {
   margin-top: 1em;
 }
-/* line 259, ../_sass/application.scss */
+/* line 273, ../_sass/application.scss */
 ul.author-posts li {
   border-bottom: 1px solid gainsboro;
 }
-/* line 262, ../_sass/application.scss */
+/* line 276, ../_sass/application.scss */
 ul.author-posts li:last-child {
   border-bottom: none;
 }
 
-/* line 270, ../_sass/application.scss */
+/* line 284, ../_sass/application.scss */
 footer {
   margin-top: 2em;
   border-top: 1px solid gainsboro;
