@@ -141,5 +141,5 @@ The benefits of these changes might not be the biggest pain you feel in your cod
 
 I'm using [SimplestView](https://github.com/tpitale/simplest_view) daily, in as many of my projects as possible. Not because the code I already have is horrendous, and not because there are no alternatives to refactor and clean up my code. I'm using it because it enables functionality in Rails that should be available already, and it gives me the conventions I kept searching for.
 
-If SimplestView doesn't strike your fancy, you can go the decorator route with the fantastic [Draper](https://github.com/drapergem/draper). Both Draper and SimplestView accomplish very similar things. Regardless, you should try using one of them, and see how it helps you clean up your code.
+If SimplestView doesn't strike your fancy, you can go the decorator route with the fantastic [Draper](https://github.com/drapergem/draper) gem. Both Draper and SimplestView accomplish very similar things. Regardless, you should try using one of them, and see how it helps you clean up your code.
 
