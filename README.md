@@ -16,6 +16,8 @@ content about the technology, techniques, and process the authors are using.
 
 ## Getting Started ##
 
+Please be sure to read our [Code of Conduct](https://github.com/growingdevs/growingdevs.github.io/blob/master/CODE_OF_CONDUCT.md) before contributing.
+
 1. Clone the repo
 2. `bundle install`
 3. `foreman start`
