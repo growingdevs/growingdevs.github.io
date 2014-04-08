@@ -1,2 +1,2 @@
-web: jekyll serve --watch --config _config.yml,_development_config.yml
+web: jekyll serve --trace --watch --config _config.yml,_development_config.yml
 compass: compass watch ./_sass
