@@ -1,10 +1,16 @@
+
 // SERIF
 $palatino: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+
+$baskerville: 'Libre Baskerville', Baskerville, serif;
+$serif: $baskerville;
 
 // SANS
 $trebuchet: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 $verdana: Verdana, Geneva, sans-serif;
 $lucida-grande: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+$lato: 'Lato', times, sans-serif;
+$sans-serif: $lato;
 
 // MONOSPACE
 $monospace: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;

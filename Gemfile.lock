@@ -61,4 +61,5 @@ DEPENDENCIES
   compass
   foreman
   jekyll
+  redcarpet
   thor

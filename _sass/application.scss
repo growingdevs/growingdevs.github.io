@@ -10,7 +10,13 @@
 
 body {
   color: $primary-font-color;
-  font: 300 16px/1.4em $helvetica;
+  background: #fdfdfd;
+  font: 300 16px/1.4em $serif;
+  line-height: 1.6em;
+}
+
+h1,h2,h3 {
+  font-family: $sans-serif;
 }
 
 a {
@@ -20,6 +26,10 @@ a {
   &:hover {
     text-decoration: underline;
   }
+}
+
+code {
+  font-family: $monospace;
 }
 
 .container {
@@ -36,6 +46,7 @@ a {
 // NAVIGATION
 nav {
   text-align: center;
+  font-family: $sans-serif;
 
   ul {
     li {
@@ -43,6 +54,8 @@ nav {
       padding-right: 0.5em;
       text-align: center;
       display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: .05em;
     }
   }
 }
@@ -54,10 +67,10 @@ header {
 
   h1 {
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 2.0em;
+    text-transform: uppercase;
     text-align: center;
-    // font-weight: lighter;
-    // text-transform: uppercase;
+    letter-spacing: .05em;
 
     @include respond-to($small) {
       text-align: left;
@@ -74,7 +87,11 @@ header {
 // INDEX
 p.intro {
   margin: 1em 0 2em 0;
-  line-height: 1.2em;
+  padding-left: 3em;
+  padding-right: 6em;
+  text-align: justify;
+  line-height: 1.8em;
+  font-size: 80%;
 }
 
 // ARTICLE
@@ -83,12 +100,13 @@ article {
   // border-top: 1px dotted #EEE;
 
   h1 {
-    font-size: 1.4em;
+    font-size: 1.6em;
     font-weight: normal;
     margin: .25em 0 0 0;
+    line-height: 1.8em;
 
     a {
-      text-transform: uppercase;
+      font-weight: bold;
     }
 
     @include respond-to($small) {
@@ -97,7 +115,7 @@ article {
   }
 
   h2 {
-    font-size: 1.05em;
+    font-size: 1.1em;
     font-weight: bold;
     margin: 2em 0 0.5em 0;
   }
@@ -111,6 +129,9 @@ article {
   span.created-at {
     display: block;
     text-align: center;
+    font-family: $sans-serif;
+    line-height: 1.8em;
+    margin-top: 1em;
 
     @include respond-to($small) {
       float: right;
@@ -119,21 +140,22 @@ article {
 
   span.author {
     display: block;
-    // font-size: 80%;
+    font-size: 80%;
     margin-bottom: 1em;
+    font-weight: 400;
 
     em {
-      color: $tag-color;
-      font-style: italic;
+      font-weight: 200;
     }
   }
 
   p {
     margin-bottom: 1em;
-
     strong {
       font-weight: bold;
     }
+    line-height: 1.8em;
+    font-family: $serif;
   }
 
   p.summary {
@@ -147,6 +169,7 @@ article {
   ul {
     margin-left: 0.5em;
     margin-bottom: 1em;
+    font-family: $serif;
 
     li {
       list-style-type: disc;
@@ -165,6 +188,7 @@ article {
   }
 
   ul.tags {
+    font-family: $sans-serif;
     // float: right;
     // margin-top: .5em;
     margin: 0;
@@ -225,6 +249,8 @@ ul.years {
 
     ul.posts {
       li {
+        font-family: $sans-serif;
+        font-weight: bold;
         a {}
         span.created-at {}
       }
@@ -238,7 +264,6 @@ ul.posts {
       display: block;
       margin-right: 10%;
       padding: 0.25em 0;
-      text-transform: uppercase;
     }
 
     span.created-at {
@@ -253,6 +278,7 @@ ul.authors {
 
   li {
     border-bottom: 1px solid $grey86;
+    font-family: $sans-serif;
 
     &:last-child {
       border-bottom: none;
@@ -261,7 +287,6 @@ ul.authors {
     a {
       display: block;
       padding: 0.25em 0;
-      text-transform: uppercase;
     }
   }
 }
