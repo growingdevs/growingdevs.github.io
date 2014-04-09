@@ -12,8 +12,7 @@ summary: Rails 4.0.4 depends on version 2.2.x of the <code>jquery-rails</code> g
 
 Rails 4.0.4 depends on version 2.2.x of the `jquery-rails` gem which in turn bundles 1.9.1 of JQuery. Does that make *any* sense?  The latest official release of `angular-ui-bootstrap-rails` is 0.9.0, which is at least a version behind the current release of the Angular UI bootstrap directives.  When will it be updated?  `chosen-rails` version 1.1.0 bundles an old version of `chosen-jquery` that has never been officially released.  What?
 
-As recent as a year and half ago, this mess was the only sane way to manage front-end assets in a Rails app.  Thanks to Rails
-Engines, a RubyGem can be created that, when required in a Rails app, will make assets available via the asset pipeline.  
+As recent as a year and a half ago, this mess was the only sane way to manage front-end assets in a Rails app. You'd have to create a Rails Engine inside a gem that made the assets available.
 
 When you want to use an asset in your Rails app, you have to navigate the insanity above to figure out what version you are using.  If what you want isn't provided by a gem, the “best practice” was to just download the files and throw them in `vendor/assets`.  If your assets had inter-dependencies, you better watch out.  And if you had a non-Ruby application - forget about it.
 
