@@ -7,8 +7,11 @@ created_at: 2014-04-09 11:34:50.578721 -05:00
 published_at: 2014-04-09 11:34:50.580193 -05:00
 tags: ruby, rails, javascript, bower
 published: true
-summary: Rails 4.0.4 depends on version 2.2.x of the <code>jquery-rails</code> gem which in turn bundles 1.9.1 of JQuery. Does that make <strong>any</strong> sense?  RubyGems isn't well-designed to manage front-end assets, especially those maintained outside the Rails ecosystem.  Bower, on the other hand, is.
+summary: Rails' history with front-end asset management is somewhat complex, involving a mixture of gems and manual file management.  Fortunately, there's now a better way—Bower.
 ---
+
+Rails' history with front-end asset management is somewhat complex, involving a mixture of gems and manual file management.
+Fortunately, there's now a better way—Bower.
 
 Rails 4.0.4 depends on version 2.2.x of the `jquery-rails` gem which in turn bundles 1.9.1 of JQuery. Does that make *any* sense?  The latest official release of `angular-ui-bootstrap-rails` is 0.9.0, which is at least a version behind the current release of the Angular UI bootstrap directives.  When will it be updated?  `chosen-rails` version 1.1.0 bundles an old version of `chosen-jquery` that has never been officially released.  What?
 
