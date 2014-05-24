@@ -1,6 +1,6 @@
 ---
 published: false
-title: building-a-conference-from-scratch
+title: Building a Conference From Scratch
 subtitle: 
 author: Jeremy Carbaugh
 created_at: 2014-05-22 22:06:31.188414 -04:00
