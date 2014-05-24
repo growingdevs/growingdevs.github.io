@@ -33,7 +33,7 @@ Having all of the ticket information in our own system allows us to tie in other
 
 What would an unconference be without a giant wall for schedule making? Until last year we used a paper-based wall where people would write session information on cards and tape them to the wall. We decided to try something different in 2013 (partially due to the venue not allowing tape on the walls) and go completely digital. Sessions were submitted via laptops or paper and entered into a database. This database powered both the web site and a giant HTML calendar view that was cast onto the wall using three short throw projectors.
 
-We're moving back to a paper wall this year, but session will still be submitted electronically, online or via the provided laptops. Cards for each session will be printed and hung on the wall by staff.
+We're moving back to paper this year due to readability issues with the digital wall (distance, text size, clarity, etc.), but sessions will still be submitted electronically. Cards for each session will be printed and hung on the wall by staff.
 
 ## The Counselors
 
