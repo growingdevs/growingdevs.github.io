@@ -10,7 +10,7 @@ tags: python, ios, diy
 summary: Running your own conference provides the opportunity to create fun projects from scratch. Running TransparencyCamp, we've created a lot of great software at the Sunlight Foundation, but we've also duplicated a lot of existing work.
 ---
 
-Anyone who knows me well will tell you that I have a terrible habit of reinventing the wheel. It can get [really, really bad](http://sunlightfoundation.com/blog/2011/11/02/on-cms-diy/) at times. I know there is a lot of great software out there, but there is always the smallest little that keeps it from being perfect. I know I can do better! So imagine the itch I get when someone says "Hey, we have to run a conference."
+Anyone who knows me well will tell you that I have a terrible habit of reinventing the wheel. It can get [really, really bad](http://sunlightfoundation.com/blog/2011/11/02/on-cms-diy/) at times. I know there is a lot of great software out there, but there is always the smallest little thing that keeps it from being perfect. I know I can do better! So imagine the itch I get when someone says "Hey, we have to run a conference."
 
 [TransparencyCamp](http://transparencycamp.org/) is an open government unconference run by my employer, the [Sunlight Foundation](http://sunlightfoundation.com/). We started TransparencyCamp in 2009 with just under 100 attendees. It was a scrappy little event, with most of us having very little experience running a conference. On May 30-31, 2014, we'll be hosting over *550 people from across the world* at TransparencyCamp 2013.
 
