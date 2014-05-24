@@ -52,7 +52,7 @@ Almost everything staff need to do at TransparencyCamp is handled by a custom iO
 
 All of this information is stored on a central server, Lodge, that has a simple JSON API. The Lodge is a Python web app written in [Flask](http://flask.pocoo.org/) and hosted on [Heroku](http://heroku.com). The iOS app itself is a small client to the API using [AFNetworking](http://afnetworking.org) for making calls to the server.
 
-We distribute to staff devices via [TestFlight](http://testflightapp.com). If an emergency fix needs to be pushed out, TestFlight can force people to upgrade, ensuring that everyone is using the latest version.
+We distribute the app to staff devices via [TestFlight](http://testflightapp.com). If an emergency fix needs to be pushed out, TestFlight can force people to upgrade, ensuring that everyone is using the latest version.
 
 
 ## The Other Stuff
