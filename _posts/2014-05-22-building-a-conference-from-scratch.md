@@ -22,7 +22,7 @@ In previous years we used [Eventbrite](http://eventbrite.com) for registration a
 
 This year we've gone with a completely homegrown registration and ticketing system writen in [Python](https://www.python.org/) and [Django](https://www.djangoproject.com/). It uses [Braintree](https://www.braintreepayments.com/) for processing payments, sends email with [Postmark](https://postmarkapp.com), and has an API for accessing ticket information. The system also takes care of generating all of the QR codes that are printed on the badges.
 
-Having all of the ticket information in our own system allows us to tie-in other aspects of the event. We have several food trucks available for lunch (covered by the price of a ticket) and will have staff at each truck scanning the QR code on attendee badges when they get their food. This isn't just to make sure people only eat one meal, it will also provide us with valuable data about which trucks were the most popular and how fast each truck was able to serve customers. We'll be displaying this information in real-time at the event.
+Having all of the ticket information in our own system allows us to tie in other aspects of the event. We have several food trucks available for lunch (covered by the price of a ticket) and will have staff at each truck scanning the QR code on attendee badges when they get their food. This isn't just to make sure people only eat one meal, it will also provide us with valuable data about which trucks were the most popular and how fast each truck was able to serve customers. We'll be displaying this information in real-time at the event.
 
 ## The Schedule
 
