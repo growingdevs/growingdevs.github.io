@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Building a Conference From Scratch
 subtitle: 
 author: Jeremy Carbaugh
@@ -27,7 +27,7 @@ Having all of the ticket information in our own system allows us to tie in other
 ## The Schedule
 
 <figure>
-<a href="https://www.flickr.com/photos/sunlightfoundation/8717344451" title="An attentive crowd in front of &quot;The Wall&quot; by sunlightfoundation, on Flickr"><img src="https://farm8.staticflickr.com/7422/8717344451_bb0ccff6f2.jpg" width="500" height="333" alt="An attentive crowd in front of &quot;The Wall&quot;"></a>
+<a href="https://www.flickr.com/photos/sunlightfoundation/8717344451" title="An attentive crowd in front of &quot;The Wall&quot; by sunlightfoundation, on Flickr"><img src="https://farm8.staticflickr.com/7422/8717344451_bb0ccff6f2.jpg" width="100%" alt="An attentive crowd in front of &quot;The Wall&quot;"></a>
 <figcaption>An attentive crowd in front of &quot;The Wall&quot; by sunlightfoundation</figcaption>
 </figure>
 
@@ -58,7 +58,7 @@ We distribute the app to staff devices via [TestFlight](http://testflightapp.com
 ## The Other Stuff
 
 <figure>
-<a href="https://www.flickr.com/photos/bytemarks/6980599906" title="Transparency Camp 2012 by Burt Lum, on Flickr"><img src="https://farm9.staticflickr.com/8148/6980599906_146e560058.jpg" width="500" height="374" alt="Transparency Camp 2012"></a>
+<a href="https://www.flickr.com/photos/bytemarks/6980599906" title="Transparency Camp 2012 by Burt Lum, on Flickr"><img src="https://farm9.staticflickr.com/8148/6980599906_146e560058.jpg" width="100%" alt="Transparency Camp 2012"></a>
 <figcaption>Transparency Camp 2012 by Burt Lum</figcaption>
 </figure>
 
