@@ -48,13 +48,13 @@ Unfortunately the output of the program didn't serve my needs. I forked the repo
 
 I promise that I did not set out from the start to build my own code complexity tool. Really I didn't. But in the end, that's what I did.
 
-Fukuzatsu (Japanese for "complexity") is a command-line tool packaged as a Ruby gem. It is invoked by the `fuku check` command, which takes a file path as an argument. Output options can be specified by a `--format` (or `-f`) flag, and include `html`, `csv`, and of course `text` (default). An early feature request resulted in one other output mode, designed for CLI integration, which returns a zero or non-zero exit status based on the target code staying below a user-provided complexity threshold (specified with a `--threshold` or `-t` option).
+Fukuzatsu (Japanese for "complexity") is a command-line tool packaged as a Ruby gem. It is invoked by the `fuku check` command, which takes a file path as an argument. Output options can be specified by a `--format` (or `-f`) flag, and include `html`, `csv`, and of course `text` (default). To facilitate CI integration, the program can be passed a minimum threshold (via `--threshold` or `-t`), which in turn triggers an exit condition that CI applications can use to ensure that code meets your standards.
 
 ## STDOUT Output
 
-Good UNIX programs accept text input and return text output, allowing them to be used in the composition of powerful ad-hoc programs using the `|`. Fukuzatsu's default mode accepts a file path and returns text output. So for example if we want to analyze the largest file in our project, we can do this:
+Good UNIX programs accept text input and return text output, allowing them to be used in the composition of powerful ad-hoc programs using the pipe operator (`|`). Fukuzatsu's default mode accepts a file path and returns text output. So for example if we want to analyze the largest file in our project, we can do this:
 
-    $ ls -S ./lib/*/** | head -1 | xargs fuku check $1
+    $ find . -type f -exec ls -s {} \; | sort -n -r | head -1 | xargs fuku check $1
 
 This composite program uses `ls` to list files in order of size, piped to `head` to grab the first on the list, and passing the result to `fuku` for analysis. The output is:
 
@@ -82,7 +82,7 @@ This could be handy for running via a cron job to measure how complexity changes
 
 If you want to pull your analysis into a spreadsheet, the csv option is right for you:
 
-    $ fuku check lib/foo/bar.rb
+    $ fuku check lib/foo/bar.rb -f csv
     Results written to:
     doc/fukuzatsu/lib/foo/bar.rb.csv
 
@@ -110,7 +110,7 @@ To better integrate with a continuous integration system, set the `-t` (threshol
 
     Maximum complexity is 17, which is greater than the threshold of 7.
 
-When a threshold is set, the return value will be non-zero if the threshold is met or exceeded.
+When a threshold is set, the exit status will be non-zero if the threshold is met or exceeded.
 
 ## HTML Output
 
