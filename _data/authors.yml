@@ -1,12 +1,12 @@
-- id: tpitale
-  name: Tony Pitale
 - id: aito
   name: Austen Ito
-- id: travisvalentine
-  name: Travis Valentine
+- id: coraline-ada-ehmke
+  name: Coraline Ada Ehmke
 - id: dave-copeland
   name: Dave Copeland
 - id: jeremy-carbaugh
   name: Jeremy Carbaugh
-- id: coraline-ada-ehmke
-  name: Coraline Ada Ehmke
+- id: tpitale
+  name: Tony Pitale
+- id: travisvalentine
+  name: Travis Valentine

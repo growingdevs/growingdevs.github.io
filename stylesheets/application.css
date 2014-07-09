@@ -1,4 +1,4 @@
-/* line 17, ../../../../.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../Users/tpitale/.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../Users/tpitale/.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../Users/tpitale/.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../Users/tpitale/.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../Users/tpitale/.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../Users/tpitale/.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../Users/tpitale/.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../Users/tpitale/.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../Users/tpitale/.gem/ruby/1.9.3/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -171,7 +171,7 @@ article {
 article h1 {
   font-size: 1.6em;
   font-weight: normal;
-  margin: .25em 0 0 0;
+  margin: 0.25em 0 0 0;
   line-height: 1.8em;
 }
 /* line 106, ../_sass/application.scss */
@@ -285,8 +285,8 @@ article blockquote {
   padding: 1.5em;
   margin: 0.5em 0;
   background: #F9F9F9;
-  border-left: 0.25em solid #CCC;
-  border-right: 0.25em solid #CCC;
+  border-left: 0.25em solid #cccccc;
+  border-right: 0.25em solid #cccccc;
 }
 /* line 222, ../_sass/application.scss */
 article blockquote p {
@@ -414,14 +414,14 @@ pre[class*="language-"] {
 /* line 48, ../_sass/_highlighting.scss */
 pre[class*="language-"] {
   padding: 1em;
-  margin: .5em 0;
+  margin: 0.5em 0;
   overflow: auto;
 }
 
 /* line 55, ../_sass/_highlighting.scss */
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
 }
 
 /* Inline code */
