@@ -27,10 +27,12 @@ Please be sure to read our [Code of Conduct](https://github.com/growingdevs/grow
 1. Start a new post, using `thor post:create new-post-title`.
 2. Edit `_posts/20XX-XX-XX-new-post-title.md`.
 3. Run with `foreman start`
-4. Create a PR with your new post
-5. After a little bit of editorial review, merge and push
+4. Create a PR with your new post (any post is also welcome in email to growingdevs@gmail.com or tweet to @growingdevs)
+5. After a little bit of editorial review, we will merge and push
 
 ### Adding a New Author ###
+
+You don't have to add this yourself, we can add it when your article is published.
 
 1. Run thor author:create "Author Name" author-name to build an author page for Author Name in /authors/author-name.html
 2. Add the author to _config.yml with id: author-name, and name: Author Name
