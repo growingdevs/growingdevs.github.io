@@ -7,7 +7,7 @@ ga_id:
 created_at: 2014-07-13 20:03:43.439240 -05:00
 published_at: 2014-07-13 20:03:43.439350 -05:00
 layout: post
-tags:
+tags: languages
 summary:
 ---
 
