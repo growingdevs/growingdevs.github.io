@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: how-to-pick-languages
 subtitle: 
 author: Adam Keys
