@@ -1,6 +1,6 @@
 ---
 published: true
-title: how-to-pick-languages
+title: How to Pick Languages
 subtitle: 
 author: Adam Keys
 ga_id: 
