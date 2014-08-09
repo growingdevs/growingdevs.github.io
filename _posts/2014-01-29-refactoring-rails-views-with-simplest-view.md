@@ -113,7 +113,7 @@ Extraneous logic in your ERB templates is _very_ likely to be a code smell. Exte
 
 Inside of our `SalesController#show` action, we'll likely render the template found in `show.html.erb`. It might have some code like:
 
-<pre><code class='language-ruby'>&lt;% @sale.starts_on &lt;= Date.today &amp;&amp; @sale.ends_on > Date.today %&gt;
+<pre><code class='language-ruby'>&lt;% if @sale.starts_on &lt;= Date.today &amp;&amp; @sale.ends_on > Date.today %&gt;
   On Sale!
 &lt;% else %&gt;
   Sale Starts On: &lt;%= @sale.starts_on.strftime("%B %d, %Y") %&gt;
