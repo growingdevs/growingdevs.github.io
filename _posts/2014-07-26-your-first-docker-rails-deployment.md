@@ -1,7 +1,7 @@
 ---
 published: true
-title: Your First Docker Rails Deployment
-subtitle: 
+title: A basic infrastructure with Docker, Chef, and Rails
+subtitle: A basic infrastructure setup using the features of Docker.
 author: Austen Ito
 ga_id: 
 created_at: 2014-07-26 13:48:08.227526 -04:00
@@ -13,17 +13,20 @@ summary:
 
 # Before we get started
 
-I'm assuming you're familiar with Docker and Vagrant. If you aren't, just read the following articles and you'll be all set.
+I'm assuming you're familiar with Docker and Vagrant. If not, take a look at following articles:
 
 * [Getting Started with Docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-getting-started)
 * [Vagrant](http://www.vagrantup.com/)
 * [Chef-Docker](https://github.com/bflad/chef-docker) - The chef cookbook used to manage docker.
 
 
-This tutorial also has the following dependencies:
+We'll be using an [Example Chef Kitchen](https://github.com/austenito/docker-chef-rails-example) throughout this blog.
 
-* [Example Chef Kitchen](https://github.com/austenito/docker-chef-rails-example) - The chef kitchen we'll be using in this example
+# What isn't covered
 
+* Zero downtime deploys - Vamsee Kanakala's talk on [Zero Downtime Deployments with Docker](https://www.youtube.com/watch?v=mQvIWIgQ1xg) at Garden City Ruby is helpful.
+* Backing up your containers
+* Deployment to production - I have been deploying to DigitalOcean via Chef solo, however that's a bit outside the scope of this post.
 
 # What are we trying to build?
 
@@ -33,18 +36,23 @@ It's hard to explain even a simple infrastructure without a diagram. So this is 
 
 When building each image, I use the following pattern:
 
-* Copy a Dockerfile and related files into a directory on the host machine.
+* Copy a Dockerfile and related files into a directory onto the host machine.
 * Set the Docker daemon context to the directory with the copied files.
 * Build the docker image using the Dockerfile.
 * Set the default command in the Dockerfile to execute either the service itself or a bash script.
 
-## Data Volume
+# Data Volume
+
+Before each section, I'll reference the chef recipe and the Dockerfile here:
+
+* [Recipe](https://github.com/austenito/docker-chef-rails-example/blob/master/cookbooks/example-cookbook/recipes/data-volume.rb)
+* [Dockerfile](https://github.com/austenito/docker-chef-rails-example/blob/master/cookbooks/example-cookbook/files/default/data-volume/Dockerfile)
 
 The first thing we'll need to create is a [docker volume](https://docs.docker.com/userguide/dockervolumes/) storing data we want to persist outside of
 our ephemeral containers. Our volume stores logs for our rails application, unicorn, and nginx. It also serves as a gem cache. Without the cache, our deploys
 would take forever since each container would need to download the same gem.
 
-Let's take a look at the [data-volume recipe](https://github.com/austenito/docker-chef-rails-example/blob/master/cookbooks/example-cookbook/recipes/data-volume.rb):
+Let's take a look at the data volume recipe:
 
 <pre>
   <code class="language-ruby">
@@ -74,33 +82,71 @@ Let's take a look at the [data-volume recipe](https://github.com/austenito/docke
 </pre>
 
 1. The first thing we need to do is copy over our [Dockerfile](http://docs.docker.com/reference/builder/) to build our docker volume image. We copy the Dockerfile 
-   the _context_ of the Docker build to provide the Docker daemon access to the files when building the image.
+   into the _context_ of the Docker build to provide the Docker daemon access to the files when building the image.
 
-2. Next we create the docker volume image. We set the context of the build to be `/tmp`, which is where we copied our Dockerfile.
-scripts.
+2. Next we create the docker volume image. We set the context of the build to be `/tmp`, which is where we copied our Dockerfile
+   scripts.
 
 3. Finally, we use the data volume docker image to run a container.
 
-## Postgres
+Our containers are running a default command set by each image's Dockerfile. Our data volume's Dockerfile is fairly basic since it only runs a bash shell.
 
-Next up, let's take a look at a recipe building a container running postgres:
+# Postgres
+
+* [Recipe](https://github.com/austenito/docker-chef-rails-example/blob/master/cookbooks/example-cookbook/recipes/postgres.rb)
+* [Dockerfile](https://github.com/austenito/docker-chef-rails-example/blob/master/cookbooks/example-cookbook/files/default/postgres/Dockerfile)
+
+Let's look at the chef recipe to build our docker image, since there's a lot more going on:
+
+<pre>
+  <code class="bash">
+    ...
+
+    # 1
+    RUN mkdir /postgres
+    ADD Berksfile /postgres/Berksfile
+    ADD solo.json /postgres/solo.json
+    ADD solo.rb /postgres/solo.rb
+
+    WORKDIR /postgres
+
+    # 2
+    RUN bash -c 'source /usr/local/share/chruby/chruby.sh; chruby 2.1.2'
+    RUN berks vendor ./cookbooks
+    RUN chef-solo -c solo.rb -j solo.json
+
+    # 3
+    VOLUME  ["/etc/postgresql", "/var/log/postgresql", "/var/lib/postgresql"]
+
+    EXPOSE 5432
+
+    USER postgres
+
+    # 4
+    CMD ["/usr/lib/postgresql/9.3/bin/postgres",
+         "-D", "/var/lib/postgresql/9.3/main", "-c",
+         "config_file=/etc/postgresql/9.3/main/postgresql.conf"]
+  </code>
+</pre>
+
+1. The Dockerfile is responsible for adding files to our docker image. These files are relative to docker daemon context.
+
+2. Run chef-solo to build and configure postgres with the files we copied into our image.
+
+3. Expose directories to other containers to allow backups of our data. If we didn't do this and the container is deleted, all of our
+   data would be lost.
+
+4. Run postgres.
+
+Our chef recipe is similar to the data volume except when we run our container as we specify `env` and `volumes_from`.
+
+* `env` allows us to pass environmental variables such as credentials into our running container. 
+* `volumes_from` provides access to the directories exposed from our docker volume container. 
 
 <pre>
   <code class="language-ruby">
-    # 1
-    remote_directory '/tmp/postgres' do
-      source 'postgres'
-    end
+    ...
 
-    # 2
-    docker_image 'austenito/postgres' do
-      source '/tmp/postgres'
-      tag '9.3'
-      action :build_if_missing
-      cmd_timeout 900
-    end
-
-    # 3
     if `sudo docker ps -a | grep postgres`.size == 0
       docker_container 'postgres' do
         image 'austenito/postgres:9.3'
@@ -117,25 +163,15 @@ Next up, let's take a look at a recipe building a container running postgres:
   </code>
 </pre>
 
-1. Copy over our [Dockerfile](https://github.com/austenito/docker-chef-rails-example/blob/master/cookbooks/example-cookbook/files/default/postgres/Dockerfile) 
-   and any other files needed to build and configure postgres.
 
-2. Now we can build our postgres image using chef-solo and the postgresql chef recipe. See 
-   [Creating immutable servers with chef and docker](http://tech.paulcz.net/2013/09/creating-immutable-servers-with-chef-and-docker-dot-io.html) 
-   for a step-by-step tutorial on using docker and chef while building your images.
+# Rails application
 
-3. Running our container is a little different from our data volume container because we specify options: `env` and `volumes_from`.
+* [Recipe](https://github.com/austenito/docker-chef-rails-example/blob/master/cookbooks/example-cookbook/recipes/rails-example.rb)
+* [Dockerfile](https://github.com/austenito/docker-chef-rails-example/blob/master/cookbooks/example-cookbook/files/default/rails-example/Dockerfile)
 
-* `env` allows us to pass environmental variables such as credentials into our running container. 
-* `volumes_from` provides access to the directories exposed from our docker volume container. 
-
-We also set the default command of the container to run postgres. This is specified via the `CMD` directive in the Dockerfile.
-
-## Rails application
-
-Our Rails application is similar in setup to our other containers except for the `link` directive. `link` provides 
-[container linking](https://docs.docker.com/userguide/dockerlinks/#docker-container-linking), which exposes environmental 
-variables with ip and port information of our postgres container.
+Our Rails application container uses the `link` directive to provide
+[container linking](https://docs.docker.com/userguide/dockerlinks/#docker-container-linking). This exposes environment
+variables with ip and port information of postgres container.
 
 <pre>
   <code class="language-ruby">
@@ -153,15 +189,19 @@ variables with ip and port information of our postgres container.
   </code>
 </pre>
 
-When the rails-example container starts up, [run.sh](https://github.com/austenito/docker-chef-rails-example/blob/master/cookbooks/example-cookbook/files/default/rails-example/run.sh)
-executes. The script clones the latest rails-example repository, bundles, migrates, and starts unicorn.
+When the rails-example container starts up, we want to be able to bundle, precompile our assets, migrate, then start our server. Specifying this inline via the `CMD` directive
+is a bit cumbersome, so we can specify a script, [run.sh](https://github.com/austenito/docker-chef-rails-example/blob/master/cookbooks/example-cookbook/files/default/rails-example/run.sh)
+to execute. The script clones the latest rails-example repository, bundles, migrates, and starts unicorn.
 
-## Nginx
+# Nginx
 
-[Nginx](https://github.com/austenito/docker-chef-rails-example/blob/master/cookbooks/example-cookbook/recipes/nginx-run.rb) is configured the same way as our 
-Rails application. Nothing more to see here.
+* [Recipe](https://github.com/austenito/docker-chef-rails-example/blob/master/cookbooks/example-cookbook/recipes/nginx.rb)
+* [Dockerfile](https://github.com/austenito/docker-chef-rails-example/blob/master/cookbooks/example-cookbook/files/default/nginx/Dockerfile)
 
-## Putting it all together
+Nginx is configured manually by installing nginx via apt and copying over our the nginx.conf file. For our purposes, setting up the nginx recipe is _way_ to
+complicated and not worth an simple infrastructure setup.
+
+# Putting it all together
 
 We're ready to deploy our infrasture to vagrant. Run the following commands:
 
