@@ -29,7 +29,7 @@ Our chef kitchen, where we'll configure our environment specific variables, can 
 
 It's hard to explain even a simple infrastructure without a diagram. So this is what we'll be building step-by-step:
 
-![Docker Rails Diagram](https://copy.com/ACyi0xiRhoNT0YOn)
+![Docker Rails Diagram](https://dl.dropboxusercontent.com/u/4857754/instrastructure.png)
 
 In this diagram, each square represents a Docker container built from a Docker image. Everything a container needs to run is either found in the container (e.g. configuration files) or by
 linking to other containers.
