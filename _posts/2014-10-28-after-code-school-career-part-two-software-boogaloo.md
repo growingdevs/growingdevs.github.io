@@ -30,15 +30,15 @@ Looking back, while my path was a bit unusual at the time, my gravitation toward
 
 Dorsey's observation is spot-on. If I were in my previous government job, it might take years to see something come to fruition. Now I can go home with an idea, crank out some code and have a working prototype, all in a matter of days. (Granted there's still a ton of work to go into making a prototype a reality, but I digress.) That satisfaction is what attracted me to web development and it's one of the reasons for which I'm grateful for having been a part of Hungry Academy. But like everything else, the road to becoming an engineer wasn't without its challenges.
 
-Much like the experiences that come from them, the challenges that code schools provide are unique. While you're going through it, you're aware of how the skills you're learning are in-demand. Then when you leave, you don't know how in demand you are because you're new. Looking back on my experience there were things that were new to me that I struggled with as well as things that I had experienced before but were reinforced.
+Much like the experiences that come from them, the challenges that code schools provide are unique. While you're going through it, you're aware of how the skills you're learning are in-demand. Then when you leave, you don't know how in demand you are because you're new. Looking back, there were things that were new to me that I struggled with as well as things that I had experienced before but were reinforced.
 
 First, the things that were new:
 
 #### Imposter syndrome is real
 
-Coming out of a code school, it can be quite difficult to not suffer from imposter syndrome. You graduate and end up working alongside incredibly talented people who are on your same team, but whose journey getting there was very different: years programming as a child, college degrees, etc. Believe me, I get it. Hungry Academy wasn't your typical code school experience. We had a sweet deal thanks to LivingSocial. If there was an ideal way to learn to code, Hungry Academy was it.
+Coming out of a code school, it can be quite difficult to not suffer from [imposter syndrome](http://en.wikipedia.org/wiki/Impostor_syndrome). You graduate and end up working alongside incredibly talented people who are on your same team, but whose journey getting there was very different: years programming as a child, college degrees, etc. Believe me, I get it. Hungry Academy wasn't your typical code school experience. We had a sweet deal thanks to LivingSocial. If there was an ideal way to learn to code, Hungry Academy was it.
 
-It's hard to remember, but no matter how you got there you have to do the job you were hired to do. Period. As Mike Tomlin says, ["The Standard is the Standard"](http://www.behindthesteelcurtain.com/2013/8/12/4613342/mike-tomlin-the-standard-is-the-standard-sign-locker-room-tight-ends-depth-chart). If I'm given the job of Engineer, then I have to contribute to my team just like any other person with that title.
+It's hard to remember, but no matter how you got there you have to do the job you were hired to do. Period. As Mike Tomlin says, ["The Standard is the Standard"](http://www.behindthesteelcurtain.com/2013/8/12/4613342/mike-tomlin-the-standard-is-the-standard-sign-locker-room-tight-ends-depth-chart). If I'm given the job title of Engineer, then I have to contribute to my team just like any other person with that title.
 
 It's up to your manager and company's performance-based processes to address your performance and make sure you are judged on your current and future work as opposed to your past.
 
