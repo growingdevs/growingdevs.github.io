@@ -50,11 +50,11 @@ This is because, in software development, creating efficiency sometimes correlat
 
 But it's still tough.
 
-A word that's mentioned in a good number of blog posts is empathy. More often than not it is in respect to the people who you deal with directly. To me, it's just as important to practice empathy with those who are both directly and indirectly affected by your work.
+A word that's mentioned in a good number of blog posts of late is empathy. More often than not it is in respect to the people who you deal with directly. To me, it's just as important to practice empathy with those who are both directly and indirectly affected by your work.
 
-I'll save this for another post, but while we all believe in the power of the internet that doesn't mean we can - and should - dismiss what it can do to existing jobs through our work. So yeah...empathy.
+I'll save this for another post, but while we all believe in the power of the internet that doesn't mean we can - and should - dismiss what it can do to existing jobs through our work.
 
-And now the things I knew that were reinforced during and after Hungry Academy:
+While the importance of empathy and the reality of imposter syndrome were eye-openers, the following lessons were reinforced during (and after) Hungry Academy and have been just as important to my growth as an engineer:
 
 #### Learning is failure
 
@@ -82,4 +82,4 @@ What may not be is your sanity.
 
 Unlike with imposter syndrome, I wouldn't rely much on managers doing much here. Your managers might want you to take vacation and encourage you to do so, but you're the one who has to prioritize your life and well-being. Burning out is as real as imposter syndrome, and it won't help your team if you do.
 
-So those are my experiences. I don't pretend to think that I speak for everyone, but hopefully they help.
+So those are a few of the takeaways I took from my time in - and my career since - Hungry Academy. I don't pretend to think that I speak for everyone, but I hope my perspective helps. Especially if you’re thinking about engineering as a career or even going into a code school for the first time. If you have any questions, you can find me on twitter <a href="https://twitter.com/travisvalentine">@travisvalentine</a>.
