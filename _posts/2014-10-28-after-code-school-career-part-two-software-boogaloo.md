@@ -30,7 +30,7 @@ Looking back, while my path was a bit unusual at the time, my gravitation toward
 
 Dorsey's observation is spot-on. If I were in my previous government job, it might take years to see something come to fruition. Now I can go home with an idea, crank out some code and have a working prototype, all in a matter of days. (Granted there's still a ton of work to go into making a prototype a reality, but I digress.) That satisfaction is what attracted me to web development and it's one of the reasons for which I'm grateful for having been a part of Hungry Academy. But like everything else, the road to becoming an engineer wasn't without its challenges.
 
-Much like the experiences that come from them, the challenges that code schools provide are unique. While you're going through it, you're aware of how the skills you're learning are in-demand. Then when you leave, you don't know how in demand you are because you're new. Looking back, there were things that were new to me that I struggled with as well as things that I had experienced before but were reinforced.
+Much like the experiences that come from them, the challenges that code schools provide are unique. While you're going through it, you're aware of how much the skills you're learning are in-demand. Then when you leave, you don't know how in demand you are because you're new. Looking back, there were things that were new to me that I struggled with as well as things that I had experienced before but were reinforced.
 
 First, the things that were new:
 
