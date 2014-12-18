@@ -12,19 +12,12 @@ summary: "My experiences leading up to, during, and after Hungry Academy, the co
 ---
 
 >"I've been around the block twice, now my shot nice
-
 >No referee but best believe out here I got stripes
-
 >Now that they finally consider me a legit scorer
-
 >Would you believe I started off as a bench-warmer?
-
 >Have me feelin' like Master Splinter
-
 >Now the haters and commentators say 'there's a winner'
-
 >Hey, hard work pay off, now I don't take a day off"
-
 >- J. Cole _The Plan_
 
 A little over four years ago, I was sitting in my office in a U.S federal government agency bored out of my mind. Thinking about an idea I had during a recent trip home to Pennsylvania, I started researching web development. I joined a bunch of e-mail lists and bought a whole slew of books. After a while I reached out to some engineers, and many of them suggested I look into Ruby on Rails. So I did.
