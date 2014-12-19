@@ -34,7 +34,7 @@ Much like the experiences that come from them, the challenges that code schools 
 
 First, the things that were new:
 
-#### Imposter syndrome is real
+## Imposter syndrome is real
 
 Coming out of a code school, it can be quite difficult to not suffer from [imposter syndrome](http://en.wikipedia.org/wiki/Impostor_syndrome). You graduate and end up working alongside incredibly talented people who are on your same team, but whose journey getting there was very different: years programming as a child, college degrees, etc. Believe me, I get it. Hungry Academy wasn't your typical code school experience. We had a sweet deal thanks to LivingSocial. If there was an ideal way to learn to code, Hungry Academy was it.
 
@@ -42,7 +42,7 @@ It's hard to remember, but no matter how you got there you have to do the job yo
 
 It's up to your manager and company's performance-based processes to address your performance and make sure you are judged on your current and future work as opposed to your past.
 
-#### Empathy is necessary
+## Empathy is necessary
 
 One of the things I struggle with as an engineer is the concept of efficiency. I'm not opposed to it. As a matter of fact, I'm well aware that a part of my job revolves around creating it. However that doesn't mean it always sits well with me when I do.
 
@@ -56,7 +56,7 @@ I'll save this for another post, but while we all believe in the power of the in
 
 While the importance of empathy and the reality of imposter syndrome were eye-openers, the following lessons were reinforced during (and after) Hungry Academy and have been just as important to my growth as an engineer:
 
-#### Learning is failure
+## Learning is failure
 
 And vice versa.
 
@@ -64,7 +64,7 @@ Simply put: you likely won't be able to get through a code school if failure sca
 
 Reminding yourself that failure is a part of learning and accepting it goes a long way in the life of a new engineer. That applies to code school and beyond.
 
-#### Diversity is important
+## Diversity is important
 
 During Hungry Academy, one of the hardest things to do was to not compare myself to others. There was my friend who wrote Java in his last job, and my other friend who was picking up Ruby like she had written it for years. It wasn't by design, but when you're in an environment where everyone knows they are vying to look attractive to an engineering team, some of us compared ourselves to each other. We knew who was doing the best and we wondered where we'd end up when the music stopped.
 
@@ -72,7 +72,7 @@ The problem with that is that we lost sight of something: Everyone brought somet
 
 When you have a good team, it is rarely the case when a part of that team doesn't add something to the whole. So for me to constantly get caught up in whether I was as good at something as one of my peers wasn't productive. On its own, it didn't really matter whether I excelled in the technical or interpersonal aspects. What mattered was that my contributions helped the team move forward in the best way possible.
 
-#### Balance is paramount
+## Balance is paramount
 
 Sometimes, to compensate for imposter syndrome you end up working around the clock. I know I do. If you can relate to that, do yourself a favor: stop reading this article. Go for a walk. Go call someone you care about. Do something.
 
