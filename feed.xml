@@ -1,6 +1,5 @@
 ---
 extension: xml
-layout: false
 ---
 
 <?xml version="1.0" encoding="utf-8"?>
@@ -9,7 +8,7 @@ layout: false
   <link href="http://growingdevs.com/feed.xml" rel="self" />
   <link href="http://growingdevs.com/" />
   <id>http://growingdevs.com/</id>
-  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <updated>{{ site.time | date_to_xmlschema}}</updated>
   <author>
     <name>Growing Devs</name>
     <email>growingdevs@gmail.com</email>
@@ -20,7 +19,7 @@ layout: false
       <id>http://growingdevs.com{{post.id}}</id>
       <title>{{post.title | xml_escape}}</title>
       <link href="http://growingdevs.com{{post.url}}" />
-      <updated>{{post.published_at | date_to_xmlschema }}</updated>
+      <updated>{{post.published_at | date_to_xmlschema}}</updated>
       <author>
         <name>{{post.author | xml_escape}}</name>
       </author>
