@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Reflecting on Code School: Career Part Two, Software Boogaloo
 subtitle:
 author: Travis Valentine
