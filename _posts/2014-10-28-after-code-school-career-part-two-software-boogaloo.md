@@ -4,8 +4,8 @@ title: "Reflecting on Code School: Career Part Two, Software Boogaloo"
 subtitle:
 author: Travis Valentine
 ga_id:
-created_at: 2014-10-28 21:20:51.765220 -04:00
-published_at: 2014-10-28 21:20:51.767485 -04:00
+created_at: 2014-12-19 13:20:51.765220 -04:00
+published_at: 2014-12-19 13:20:51.767485 -04:00
 layout: post
 tags: code-academy
 summary: "My experiences leading up to, during, and after Hungry Academy, the code school I attended."
