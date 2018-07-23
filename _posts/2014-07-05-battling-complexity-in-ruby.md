@@ -34,7 +34,7 @@ Reducing conditionals is a good way to reduce noise in the codebase, and reveal 
 
 # The Garden of Plenty
 
-There are lots of code analysis tools that measure complexity, but none of them seem to agree on what complexity means. Running a suite of analysis tools using (MetricFu)[https://github.com/metricfu/metric_fu] can demonstrate general consensus on where hotspots in the code are, but it's easy to be overwhelmed by the half-dozen independent metrics that component tools provide. It's also impossible to compare the results of one tool against another, because each uses independent metrics and algorithms. Is a "D" in Code Climate better or worse than an 13.2 in Flay? Once again we face a signal-to-noise problem.
+There are lots of code analysis tools that measure complexity, but none of them seem to agree on what complexity means. Running a suite of analysis tools using [MetricFu](https://github.com/metricfu/metric_fu) can demonstrate general consensus on where hotspots in the code are, but it's easy to be overwhelmed by the half-dozen independent metrics that component tools provide. It's also impossible to compare the results of one tool against another, because each uses independent metrics and algorithms. Is a "D" in Code Climate better or worse than an 13.2 in Flay? Once again we face a signal-to-noise problem.
 
 Surely there is a tool that specifically helps identify overuse of conditionals?
 
