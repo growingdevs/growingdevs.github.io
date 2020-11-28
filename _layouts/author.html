@@ -4,7 +4,7 @@ trigger: author
 ---
 
 <ul class="posts author-posts">
-{% for post in site.posts do %}
+{% for post in site.posts %}
   {% if post.author == page.author %}
     <li>
       <span class="created-at">{{ post.published_at | date:'%b %d, %Y' }}</span>

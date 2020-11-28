@@ -3,4 +3,4 @@ permalink: none
 lsi: false
 safe: true
 exclude: ['tasks', '.ruby-version', 'README.md']
-markdown: redcarpet
+markdown: kramdown

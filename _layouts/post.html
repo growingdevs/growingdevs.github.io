@@ -11,7 +11,8 @@ trigger: post
   {{content}}
 
   <ul class="tags">
-  {% for tag in (page.tags | split '\s') %}
+  {% assign tags = page.tags | split: '\s' %}
+  {% for tag in tags %}
     <li>{{ tag }}</li>
   {% endfor %}
   </ul>

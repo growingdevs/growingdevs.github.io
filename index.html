@@ -22,7 +22,8 @@ title: Growing Devs
       </p>
 
       <ul class="tags">
-      {% for tag in (post.tags | split '\s+') %}
+      {% assign tags = post.tags | split: '\s+' %}
+      {% for tag in tags %}
         <li>{{ tag }}</li>
       {% endfor %}
       </ul>
